@@ -171,7 +171,9 @@ a {
   padding: 5px;
   
 }
-.menu-itemm:hover > ul {
+.menu-itemm:hover > ul,
+.menu-itemm:active > ul,
+.menu-itemm:focus > ul {
   transform: translateY(0px);
   opacity: 1;
   overflow: auto;
