@@ -28,6 +28,7 @@ p, ul {
 }
 a {
   text-decoration: none;
+  color: transparent;
 }
 
 
@@ -70,6 +71,7 @@ a {
 .menu-itemm {
   width: 200px;
   height: 50px;
+  color: #316d69;
   list-style: none;
   position: relative;
   z-index: 2;
@@ -171,7 +173,7 @@ a {
   padding: 5px;
   
 }
-.menu-itemm:hover > ul,
+/* .menu-itemm:hover > ul, */
 .menu-itemm:active > ul,
 .menu-itemm:focus > ul {
   transform: translateY(0px);
@@ -193,3 +195,15 @@ a {
   left: 100%;
 }
 
+
+/* 
+
+.sub-menu {
+display: none;
+}
+.main-item:focus ~ .sub-menu,
+.main-item:active ~ .sub-menu,
+.sub-menu:hover
+{
+display: block;
+} */
