@@ -39,9 +39,6 @@ body {
   box-sizing: border-box;
 }
 
-li {
-  list-style: none;
-}
 p, ul, h1, h2, h3, h4 {
   padding: 0;
   margin: 0;
@@ -249,6 +246,7 @@ a {
   width: 20%;
   /* height: 100%; */
   position: relative;
+  list-style: none;
 }
 
 
@@ -502,6 +500,10 @@ display: block;
 
 .start {
   padding: 55px;
+  background-image: url('/images/png/backflower.png');
+  background-size: 130% 132%;
+  background-position-y: -26px ;
+  background-repeat: no-repeat;
 }
 
 .start__welcome {
@@ -569,7 +571,111 @@ display: block;
 }
 
 
+/*Footer*/
 
+.footer {
+  height: 72px;
+  background-color: #d1efea;
+  padding: 18px;
+}
 
+.footer__flex {
+  display: flex;
+  justify-content: flex-end;
+  height: 72px;
+  gap: 15px
+}
+
+.footer__icon img {
+  height: 40px; 
+}
+
+.footer__mahada {
+  margin-left: 40px;
+  font-family: ElMesseri;
+  font-size: 25px;
+  color: #316d69;
+  letter-spacing: 2px;
+}
+
+/*Страница О нас - Махад*/
+
+.mahad {
+  padding: 200px 100px 100px;
+}
+
+.mahad .main__header {
+  padding-left: 50px;
+}
+
+.mahad__block {
+  background-color: rgba(209, 239, 234, 0.27);;
+  border-radius: 30px;
+  padding: 30px 90px 60px 90px;
+  position: relative;
+}
+
+.mahad__title {
+  color: #69c8c3;
+  font-family: ElMessiri;
+  font-size: 40px;
+  margin-bottom: 5px;
+  margin-top: 30px;
+}
+
+.flower {
+  width: 200px;
+  position: absolute;
+}
+
+.flower-top {
+  transform: rotate(180deg);
+  top: -46px;
+  left: calc(50% - 100px);
+}
+
+.flower-left {
+  transform: rotate(90deg);
+  left: -98px;
+  top: 30%
+}
+
+.flower-right {
+  transform: rotate(90deg);
+  right: -98px;
+  top: 60%
+}
+
+.flower-bottom {
+  left: calc(50% - 100px);
+  bottom: -46px;
+}
+
+.mahad__text,
+.mahad__text-trio {
+  margin: 10px 0;
+  font-size: 18px;
+  font-family: Lovelace;
+  color: #316d69;
+  padding: 0 100px;
+}
+
+.mahad__text-trio {
+  margin: 30px 0;
+  list-style-image: url('/images/png/liststyle1.png');
+  padding: 0;
+}
+
+.mahad__items-trio {
+  padding: 0 100px;
+}
+.mahad__items {
+  padding-left: 40px;
+}
+
+.mahad__subtitle {
+  font-weight: 700;
+  margin: 30px 0;
+}
 
 
