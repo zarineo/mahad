@@ -1,20 +1,11 @@
-const items = document.querySelectorAll(".menu-item");
-const item = document.querySelector(".menu-item");
+  document.querySelectorAll('.menu-itemm').forEach(item => {
+    item.addEventListener('click', function (e) {
+      const subMenu = this.querySelector('.items');
+      if (subMenu) {
+        // e.preventDefault(); // Предотвращает переход по ссылке
 
-const subs = document.querySelectorAll(".menu-item__item");
-
-// for (let i = 0; i < items.length; i++) {
-//     items[i].addEventListener("click", () => {
-//         const isActive = subs[i].classList.contains("active");
-
-//         for (let y = 0; y < items.length; y++) {
-//             subs[y].classList.remove("active");
-//         }
-
-//         if (!isActive) {
-//             subs[i].classList.add("active");
-//         }
-//     });
-// }
-
-console.log(items);
+        subMenu.classList.toggle('active');
+     
+      }
+    });
+  });

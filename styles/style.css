@@ -45,12 +45,12 @@ p, ul, h1, h2, h3, h4 {
 }
 a {
   text-decoration: none;
-  color: transparent;
+  color: inherit;
 }
 
 .wrapper {
   max-width: 1780px;
-  /* padding: 0 92px; */
+  /* padding: 0 40px; */
   margin: 0 auto;  
 }
 
@@ -211,16 +211,24 @@ a {
 
 .item {
   padding: 5px;
-  
+}
+
+.active {
+  transform: translateY(0px);
+  opacity: 1;
+  overflow: auto;
+  height: auto;
+  transition: 0.9s;
 }
 /* .menu-itemm:hover > ul, */
-.menu-itemm:active > ul,
+
+
+/* .menu-itemm:active > ul,
 .menu-itemm:focus > ul {
   transform: translateY(0px);
   opacity: 1;
   overflow: auto;
   height: auto;
-  /* display: block; */
   transition: 0.9s;
 }
 
@@ -233,7 +241,7 @@ a {
   display: none;
   top: 0;
   left: 100%;
-}
+} */
 
 .basmala {
   position: absolute;
@@ -279,6 +287,7 @@ display: block;
   font-size: 49px;
   font-family: 'ElMessiri';
   text-transform: uppercase;
+  padding-left: 80px;
 }
 
 .main__text {
@@ -601,10 +610,10 @@ display: block;
 .mahad {
   padding: 200px 100px 100px;
 }
-
+/* 
 .mahad .main__header {
   padding-left: 50px;
-}
+} */
 
 .mahad__block {
   background-color: rgba(209, 239, 234, 0.27);;
@@ -748,6 +757,259 @@ display: block;
 .total-items__block .about__item {
   margin: 0;
 }
+
+
+.name__icon {
+  width: 60px;
+  position: absolute;
+
+}
+
+.name__title {
+  font-family: Lovelace;
+  font-size: 30px;
+  color:#026060;
+  position: relative;
+}
+
+
+/*Mission*/
+
+.mission {
+  padding: 150px 30% 50px 60px;
+  background-image: url(/images/png/mission.png);
+  background-size: cover;
+}
+
+.mission__text {
+  font-family: Lovelace;
+  font-size: 18px;
+  color:#316d69;
+  font-weight: 600;
+}
+
+.mission__flex {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 50px;
+  gap: 10px;
+}
+
+.gal__icon,
+.mission__icon {
+  width: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.mission__item {
+  position: relative;
+  padding-left: 30px;
+  margin-left: 60px;
+}
+.mission__icon {
+  position: absolute;
+  /* bottom: 0px; */
+  top: 3px;
+  left: 0;
+}
+
+.mission__text--bottom {
+  margin-top: 40px;
+}
+
+.mission__text--blue {
+  text-align: right;
+  color: #69c8c3;
+  margin-top: 16px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.mission__text--bold {
+  font-weight: 600;
+  font-family: ElMessiri;
+  font-size: 20px;
+}
+
+.mission__text--block {
+  margin-top: 30px;
+}
+
+.mission__items {
+  padding-left: 40px;
+}
+
+/*Our Student*/
+
+.our-student {
+  padding: 150px 40px 40px 40px;
+  background-image: url('/images/png/ourstudent.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom -60px right -300px;
+}
+
+.our-student .main__header {
+  font-size: 42px;
+}
+
+.our-student__block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 40px;
+  width: 70%;
+}
+
+.our-student__item {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.hiya50 {
+  width: 50px;
+}
+
+.our-student__text {
+  font-size: 18px;
+  font-family: Lovelace;
+  color: #398087;
+}
+
+/*Ustaza Iman*/
+
+.ustaza {
+  padding: 150px 40px 40px 40px;
+}
+
+.ustaza__flex {
+  display: flex;
+  gap: 50px; 
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.ustaza__block {
+  width: 300px;
+  position: relative;
+  background-color: #eaf6f1;
+  padding: 150px 15px 15px;
+  margin-top: 100px;
+  color:#316d69;
+  font-family: Lovelace;
+  font-weight: 600;
+  text-align: center;
+}
+
+.ustaza__pict {
+  width: 250px;
+  position: absolute;
+  top: -120px;
+  left: 22px;
+}
+
+.ustaza__pict img {
+  width: 100%;
+}
+
+.ustaza__name {
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.ustaza__subname {
+  font-size: 20px;
+  position: relative;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.ustaza__subname img {
+  position: absolute;
+}
+
+.ustaza__course {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 19px;
+  width: fit-content;
+}
+.ustaza__courses {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.book-icon {
+  width: 20px;
+  height: 22px;
+}
+
+.book-icon img {
+  width: 100%;
+}
+
+.shlyapa {
+  width: 45px;
+}
+
+.ustaza__education {
+  font-family: Lovelace;
+  font-size: 18px;
+  color: #316d69;
+  align-items: center;
+  width: 55%;
+}
+
+.education__title {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.education__item {
+  /* margin-bottom: 20px; */
+  text-align: center;
+}
+
+.education__item span {
+  font-weight: 600;
+  font-size: 30px;
+}
+
+
+
+/*Ustazy*/
+
+.ustazy {
+  padding: 150px 40px 40px 40px;
+}
+
+.ustazy__flex {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.ustaza__years {
+  font-weight: 600;
+  font-size: 19px;
+}
+
+.shlyapa__wrap {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+
+
 
 
 
