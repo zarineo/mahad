@@ -483,11 +483,9 @@ display: block;
   border-top-right-radius: 300px;
   border-bottom-left-radius: 200px;
   border-bottom-right-radius: 700px;
-  /* background-image: url(/images/png/student.jpg); */
   background-size: contain;
   background-repeat: no-repeat;
   width: 30%;
-  /* height: 400px; */
   transform: rotate(5deg);
 }
 .students__photo img {
