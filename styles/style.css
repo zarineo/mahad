@@ -894,7 +894,7 @@ display: block;
   position: relative;
   background-color: #eaf6f1;
   padding: 150px 15px 15px;
-  margin-top: 100px;
+  margin-top: 150px;
   color:#316d69;
   font-family: Lovelace;
   font-weight: 600;
@@ -962,6 +962,7 @@ display: block;
   color: #316d69;
   align-items: center;
   width: 55%;
+  margin-bottom: 20px;
 }
 
 .education__title {
@@ -981,6 +982,10 @@ display: block;
   font-size: 30px;
 }
 
+.education__text {
+  text-align: center;
+  font-weight: 600;
+}
 
 
 /*Ustazy*/
