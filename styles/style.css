@@ -1,21 +1,21 @@
 @font-face {
   font-family: 'MartelSans' ;
-  src: url(fonts/Martel_Sans/MartelSans-Bold.ttf);
+  src: url(../fonts/Martel_Sans/MartelSans-Bold.ttf);
 }
 
 @font-face {
   font-family: 'ElMessiri';
-  src: url(fonts/ElMessiri/ElMessiri.ttf);
+  src: url(../fonts/ElMessiri/ElMessiri.ttf);
 }
 
 @font-face {
   font-family: 'Lovelace';
-  src: url(fonts/Lovelace/Lovelace-Regular.ttf);
+  src: url(../fonts/Lovelace/Lovelace-Regular.ttf);
 }
 
 @font-face {
   font-family: 'LovelaceLight';
-  src: url(fonts/Lovelace/Lovelace-Light.ttf);
+  src: url(../fonts/Lovelace/Lovelace-Light.ttf);
 }
 
 body {
