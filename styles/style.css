@@ -779,7 +779,7 @@ display: block;
 
 .mission {
   padding: 150px 30% 50px 60px;
-  background-image: url('/images/png/mission.png');
+  background-image: url('../images/png/mission.png');
   background-size: cover;
 }
 
