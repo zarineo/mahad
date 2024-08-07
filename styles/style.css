@@ -1196,7 +1196,8 @@ display: block;
 /*Price*/
 
 .price,
-.faq {
+.faq,
+.process {
   padding: 150px 50px 50px 50px;
   color:#316d69;
   position: relative;
@@ -1390,11 +1391,104 @@ display: block;
   top: 15px;
 }
 
+/*Process*/
+
+.process {
+  background-image: url('/images/png/process.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Lovelace;
+}
+
+.process__main-flex {
+  display: flex;
+  gap: 40px;
+  margin: 60px 0;
+}
+
+.process__block {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 50%;
+}
+
+.process__item {
+  background: #fffbf7;
+  padding: 10px;
+  border-radius: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.process__text18 {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.process__text15 {
+  font-size: 15px;
+}
+
+.process__text--blue {
+  font-size: 17px;
+  font-weight: 600;
+  color: #69c8c3;
+}
+
+.process__arrow {
+  position: absolute;
+  width: 53px;
+  top: -44px;
+  right: -29px;
+}
 
 
+@keyframes one {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
 
+#one,
+#two,
+#three,
+#four,
+#five,
+#six,
+#seven,
+#eight {
+  opacity: 0;
+  animation-name: one;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
 
+#one {
+  animation-delay: 1s;
+}
 
+#two {
+  animation-delay: 4s;
+}
 
+#three {
+  animation-delay: 7s;
+}
 
+#four {
+  animation-delay: 10s;
+}
 
+#five {
+  animation-delay: 14s;
+}
+#six {
+  animation-delay: 17s;
+}
+#seven {
+  animation-delay: 20s;
+}
+#eight {
+  animation-delay: 23s;
+}
