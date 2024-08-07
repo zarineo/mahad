@@ -331,7 +331,7 @@ display: block;
 .about_us {
   position: relative;
   padding: 55px;
-  background-image: url(/images/png/back.png) contain;
+  background-image: url(../images/png/back.png) contain;
   background-color: #fffbf7;
 }
 
@@ -779,7 +779,7 @@ display: block;
 
 .mission {
   padding: 150px 30% 50px 60px;
-  background-image: url(/images/png/mission.png);
+  background-image: url('/images/png/mission.png');
   background-size: cover;
 }
 
@@ -846,7 +846,7 @@ display: block;
 
 .our-student {
   padding: 150px 40px 40px 40px;
-  background-image: url('/images/png/ourstudent.png');
+  background-image: url('../images/png/ourstudent.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom -60px right -300px;
@@ -1330,7 +1330,7 @@ display: block;
 /*FAQ*/
 
 .faq {
-  background-image: url(/images/png/faqback.png);
+  background-image: url('../images/png/faqback.png');
   background-size: 150%;
   background-repeat: no-repeat;
   background-position: left -50px top -200px;
