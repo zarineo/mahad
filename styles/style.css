@@ -1197,7 +1197,8 @@ display: block;
 
 .price,
 .faq,
-.process {
+.process,
+.programm {
   padding: 150px 50px 50px 50px;
   color:#316d69;
   position: relative;
@@ -1492,3 +1493,62 @@ display: block;
 #eight {
   animation-delay: 23s;
 }
+
+/*Programm*/
+.programm {
+  font-family: Lovelace;
+}
+.programm__main-block {
+  position: relative;
+  border: #316d69 solid 2px;
+  padding: 10px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.programm__flex {
+  display: flex;
+  gap: 10px;
+  justify-content: space-around;
+}
+
+.programm__flower {
+  position: absolute;
+  width: 150px;
+}
+
+.flower-top-right {
+  right: 0;
+  top: -34px;
+}
+
+.flower-left-bottom {
+  rotate: 90deg;
+  left: -76px;
+  bottom: 40px;
+}
+
+.smallstar {
+  width: 25px;
+}
+
+.pb__semestr-title {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+  font-size: 20px;
+  font-weight: 600;
+} 
+
+.pb__semestr-time {
+  font-size: 15px;
+}
+
+.programm__items {
+  font-weight: 600;
+  padding-left: 40px;
+}
+
+
+
