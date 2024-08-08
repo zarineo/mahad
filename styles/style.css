@@ -873,6 +873,9 @@ display: block;
 .hiya50 {
   width: 50px;
 }
+.hiya20 {
+  width: 20px;
+}
 
 .our-student__text {
   font-size: 18px;
@@ -1208,7 +1211,9 @@ display: block;
 .price,
 .faq,
 .process,
-.programm {
+.programm,
+.books,
+.schedule {
   padding: 150px 50px 50px 50px;
   color:#316d69;
   position: relative;
@@ -1710,3 +1715,110 @@ display: block;
   padding-left: 40px;
 }
 
+/*books*/
+
+.books {
+  font-family: Lovelace;
+  background-image: url('../images/png/booksback.png');
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: top -80px right -300px;
+}
+
+.books__table {
+  background-color: #d1efea27;
+  padding: 10px;
+  border-radius: 30px;
+  border-collapse: collapse;  
+  text-align: left;
+  width: 80%;
+}
+
+.books__row {
+  border-bottom: 2px #316d6956 solid;
+}
+
+.books__name {
+  font-size: 20px;
+  font-weight: 600;
+  border-right: 2px #316d6956 solid;
+  padding: 10px 10px 10px 30px;
+}
+
+.books__description {
+  font-size: 18px;
+  font-weight: 400;
+  padding: 10px;
+}
+
+.books__text--bold {
+  font-weight: 600;
+  text-align: center;
+  margin: 20px auto;
+  width: 70%;
+}
+
+
+/*Raspisanie*/
+
+.schedule {
+  font-family: Lovelace;
+  padding-bottom: 80px;
+  position: relative;
+  background-image: url('../images/png/laptop.png');
+  background-size: 20%;
+  background-repeat: no-repeat;
+  background-position: bottom -20px right -20px;
+
+}
+
+.schedule__title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.schedule__flex {
+  display: flex;
+  gap: 40px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  justify-content: space-around;
+}
+
+.schedule__day {
+  background-image: url('../images/png/stick.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-weight: 600;
+  align-items: center;
+  padding: 20px 30px 40px 30px;
+  position: relative;
+}
+
+.schedule__weekday {
+  font-size: 40px;
+  border-bottom: 1px solid #69c8c3;
+  padding: 0 15px;
+}
+
+.schedule__course {
+  font-size: 35px;
+}
+
+.schedule__time {
+  font-size: 25px;
+}
+
+.schedule__flower {
+  position: absolute;
+  width: 160px;
+  top: -77px;
+  left: -72px;
+}
+
+.schedule__text {
+  margin: 10px 0;
+}
