@@ -331,7 +331,7 @@ display: block;
 .about_us {
   position: relative;
   padding: 55px;
-  background-image: url(../images/png/back.png) contain;
+  background-image: url('../images/png/back.png') contain;
   background-color: #fffbf7;
 }
 
@@ -454,7 +454,7 @@ display: block;
   width: 100%;
   height: 180px;
   position: relative;
-  background-image: url(/images/png/buttonstud.png);
+  background-image: url('../images/png/buttonstud.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   display: flex;
@@ -509,7 +509,7 @@ display: block;
 
 .start {
   padding: 55px;
-  background-image: url('/images/png/backflower.png');
+  background-image: url('../images/png/backflower.png');
   background-size: 130% 132%;
   background-position-y: -26px ;
   background-repeat: no-repeat;
@@ -672,7 +672,7 @@ display: block;
 
 .mahad__text-trio {
   margin: 30px 0;
-  list-style-image: url('/images/png/liststyle1.png');
+  list-style-image: url('../images/png/liststyle1.png');
   padding: 0;
 }
 
@@ -1395,7 +1395,7 @@ display: block;
 /*Process*/
 
 .process {
-  background-image: url('/images/png/process.png');
+  background-image: url('../images/png/process.png');
   background-repeat: no-repeat;
   background-size: cover;
   font-family: Lovelace;
@@ -1501,7 +1501,7 @@ display: block;
 .programm__main-block {
   position: relative;
   border: #316d69 solid 2px;
-  padding: 10px 40px;
+  padding: 10px 70px;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -1548,6 +1548,21 @@ display: block;
 .programm__items {
   font-weight: 600;
   padding-left: 40px;
+}
+
+.programm__text--bold {
+  margin: 25px 0;
+  font-weight: 600;
+}
+
+.programm__text-items {
+  padding-left: 40px;
+  margin: 5px 0;
+}
+
+.center {
+  margin: 0;
+  text-align: center;
 }
 
 
