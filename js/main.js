@@ -1,3 +1,5 @@
+console.log('hello');
+  
   document.querySelectorAll('.menu-itemm').forEach(item => {
     item.addEventListener('click', function (e) {
       const subMenu = this.querySelector('.items');
@@ -28,4 +30,3 @@
     },
   
   });
-  console.log('hello');
