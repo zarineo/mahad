@@ -1213,7 +1213,9 @@ display: block;
 .process,
 .programm,
 .books,
-.schedule {
+.schedule,
+.rules,
+.review {
   padding: 150px 50px 50px 50px;
   color:#316d69;
   position: relative;
@@ -1787,7 +1789,7 @@ display: block;
 
 .schedule__day {
   background-image: url('../images/png/stick.png');
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
@@ -1822,3 +1824,152 @@ display: block;
 .schedule__text {
   margin: 10px 0;
 }
+
+
+/*Rules*/
+
+.rules {
+  font-family: Lovelace;
+  background-image: url('../images/png/rulesback.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top -30px right -330px;
+}
+
+.rules__main-block {
+  display: flex;
+  gap: 40px;
+}
+
+.rules__flex {
+  display: flex;
+  flex-direction: column;
+  gap:30px;
+  width: 49%;
+}
+
+.rules__item {
+  display: flex;
+  gap: 10px;
+}
+
+.rules__flower {
+  position: relative;
+  width: 12%;
+}
+
+.rules__flower img {
+  width: 70px;
+  transform: rotate(90deg);
+  position: absolute;
+  left: 0;
+  top: 20px;
+}
+
+.rules__text {
+  width: 88%;
+  font-size: 14px;
+}
+
+/*review*/
+
+.review {
+  font-family: Lovelace;
+}
+
+.review__slide {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.review__image {
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+
+.image-one {
+  background-image: url('../images/png/one.jpg');
+}
+
+.image-two {
+  background-image: url('../images/png/two.jpg');
+}
+
+.image-three {
+  background-image: url('../images/png/three.jpg');
+}
+
+.image-four {
+  background-image: url('../images/png/four.jpg');
+}
+
+.image-five {
+  background-image: url('../images/png/five.jpg');
+}
+
+.image-six {
+  background-image: url('../images/png/six.jpg');
+}
+
+.image-seven {
+  background-image: url('../images/png/seven.jpg');
+}
+
+.image-eight {
+  background-image: url('../images/png/eight.jpg');
+}
+
+.image-nine {
+  background-image: url('../images/png/nine.jpg');
+}
+
+.image-ten {
+  background-image: url('../images/png/ten.jpg');
+}
+
+.image-eleven {
+  background-image: url('../images/png/eleven.jpg');
+}
+
+.image-twelve {
+  background-image: url('../images/png/twelve.jpg');
+}
+
+.review__text {
+  font-weight: 600;
+  width: 50%;
+  position: relative;
+}
+
+.review__ps {
+  color: #69c8c3;
+  font-weight: 600;
+}
+
+.quote-top,
+.quote-bottom {
+  position: absolute;
+  width: 20px;
+}
+
+.quote-top {
+  top: -10px;
+  left: -20px;
+}
+
+.quote-bottom {
+  bottom: 0px;
+  right: 0px;
+}
+
+.swiper-pagination {
+  position: relative !important;
+  margin-top: 30px;
+}
+
