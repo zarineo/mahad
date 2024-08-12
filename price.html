@@ -7,6 +7,103 @@
     <title>Тест</title>
   </head>
   <body>
+    <div class="backdrop"></div>
+    <div class="backdrop--dark"></div>
+    <div class="form__modal">
+      <h2 class="form__title">
+        <p>Анкета для поступления в &nbsp <span> МА'ХАД</span> </p><img src="images/png/hiya.png" class="hiya50">
+      </h2>
+      <form class="form" onsubmit="event.preventDefault();">
+        <input
+          type="text"
+          class="form__input"
+          value=""
+          placeholder="Фамилия Имя"
+          name="userName"
+          required
+        />
+        <input
+          type="text"
+          class="form__input"
+          value=""
+          placeholder="Дата рождения"
+          name="userDate"
+          required
+        />
+        <input
+          type="text"
+          class="form__input"
+          value=""
+          placeholder="Страна проживания"
+          name="userCountry"
+          required
+        />
+        <input
+          type="text"
+          class="form__input"
+          value=""
+          placeholder="Контакт в телеграм (обязательно проверьте настройки Вашего аккаунта, чтобы мы могли связаться)"
+          name="userCountry"
+          required
+        />
+        <input
+          type="text"
+          class="form__input"
+          value=""
+          placeholder="Адрес электронной почты"
+          name="userMail"
+          required
+        />
+        <input
+          type="text"
+          class="form__input"
+          value=""
+          placeholder="Желаемый темп обучения: 2 года/индивидуальный график"
+          name="userGrafic"
+          required
+        />
+        <input
+          type="text"
+          class="form__input"
+          value=""
+          placeholder="Уровень чтения Корана"
+          name="userKoranLvl"
+          required
+        />
+        <input
+          type="text"
+          class="form__input"
+          value=""
+          placeholder="Уровень владения арабским языком"
+          name="userArabLvl"
+          required
+        />
+        <label name="ozn" class="form__label"> 
+          <input type="checkbox" name="ozn" required>
+          Ознакомлена с условиями договора</label>
+        <button type="submit" class="form__button menu-itemm glass_button" id="sendData"> Отправить заявку </button>
+        <div class="form__flower">
+          <img src="images/png/flower.png">
+        </div>
+      </form>
+    </div>
+
+    <div class="success">
+      <h2 class="form__title success__title">
+        Дорогая сестра, <br> Ваша заявка успешно отправлена!
+      </h2>
+      <h2 class="form__title">
+        بارك اللّه فيكم
+      </h2>
+      <div class="success__flower">
+        <img src="images/png/flower.png">
+      </div>
+      <div class="success__text">
+        В ближайшее время менеджер МА`ХАДА <img src="images/png/hiya.png" class="hiya20"> 
+        <br> свяжется с Вами в Telegram
+      </div>
+      <div class="success__button menu-itemm glass_button">ОК</div>
+    </div>
     <header class="header">
       <div class="wrapper">
         <nav class="nav">
@@ -20,7 +117,7 @@
               </div>
             </a>
             <ul class="coder">
-              <li class="menu-itemm glass_button">
+              <li class="menu-itemm glass_button menus" id="item-project">
                 <p>О проекте</p>
                 <ul class="items">
                   <li class="item"><a href="aboutus.html">• О Ма'хаде</a></li>
@@ -42,14 +139,22 @@
                   </li>
                 </ul>
               </li>
-              <li class="menu-itemm glass_button">
+              <li class="menu-itemm glass_button menus" id="item-study">
                 Обучение
                 <ul class="items">
-                           <li class="item"><a href="process.html">• Процесс обучения</a></li>
-                  <li class="item"><a href="programm.html">• Учебная программа</a></li>
+                  <li class="item">
+                    <a href="process.html">• Процесс обучения</a>
+                  </li>
+                  <li class="item">
+                    <a href="programm.html">• Учебная программа</a>
+                  </li>
                   <li class="item"><a href="books.html">• Книги</a></li>
-                  <li class="item"><a href="raspisanie.html">• Расписание</a></li>
-                  <li class="item"><a href="rules.html">• Правила обучения</a></li>
+                  <li class="item">
+                    <a href="raspisanie.html">• Расписание</a>
+                  </li>
+                  <li class="item">
+                    <a href="rules.html">• Правила обучения</a>
+                  </li>
                   <li class="item"><a href="otzyv.html">• Отзывы</a></li>
                 </ul>
               </li>
@@ -297,7 +402,7 @@
           <div class="support">
             <div class="support__title">
               программа ПОДДЕРЖКА СТУДЕНТКИ МА`ХАДА
-              <img src="/images/png/hiya1.png" class="hiya">
+              <img src="images/png/hiya1.png" class="hiya">
             </div>
             <p class="support__text">
               это подбор льготных индивидуальных условий по оплате <b>для студенток основного потока, 
@@ -374,6 +479,7 @@
       </footer>
     </main>
 
-    <script src="./js/main.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/start.js"></script>
   </body>
 </html>

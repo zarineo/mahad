@@ -7,7 +7,113 @@
     <title>Тест</title>
   </head>
   <body>
+    <div class="backdrop--dark"></div>
+    <div class="form__modal">
+      <h2 class="form__title">
+        <p>Анкета для поступления в &nbsp <span> МА'ХАД</span></p>
+        <img src="images/png/hiya.png" class="hiya50" />
+      </h2>
+      <form class="form" onsubmit="event.preventDefault();">
+        <input
+          type="text"
+          class="form__input"
+          value=""
+          placeholder="Фамилия Имя"
+          name="userName"
+          required
+        />
+        <input
+          type="text"
+          class="form__input"
+          value=""
+          placeholder="Дата рождения"
+          name="userDate"
+          required
+        />
+        <input
+          type="text"
+          class="form__input"
+          value=""
+          placeholder="Страна проживания"
+          name="userCountry"
+          required
+        />
+        <input
+          type="text"
+          class="form__input"
+          value=""
+          placeholder="Контакт в телеграм (обязательно проверьте настройки Вашего аккаунта, чтобы мы могли связаться)"
+          name="userCountry"
+          required
+        />
+        <input
+          type="text"
+          class="form__input"
+          value=""
+          placeholder="Адрес электронной почты"
+          name="userMail"
+          required
+        />
+        <input
+          type="text"
+          class="form__input"
+          value=""
+          placeholder="Желаемый темп обучения: 2 года/индивидуальный график"
+          name="userGrafic"
+          required
+        />
+        <input
+          type="text"
+          class="form__input"
+          value=""
+          placeholder="Уровень чтения Корана"
+          name="userKoranLvl"
+          required
+        />
+        <input
+          type="text"
+          class="form__input"
+          value=""
+          placeholder="Уровень владения арабским языком"
+          name="userArabLvl"
+          required
+        />
+        <label name="ozn" class="form__label">
+          <input type="checkbox" name="ozn" required />
+          Ознакомлена с условиями договора</label
+        >
+        <button
+          type="submit"
+          class="form__button menu-itemm glass_button"
+          id="sendData"
+        >
+          Отправить заявку
+        </button>
+        <div class="form__flower">
+          <img src="images/png/flower.png" />
+        </div>
+      </form>
+    </div>
+
+    <div class="success">
+      <h2 class="form__title success__title">
+        Дорогая сестра, <br />
+        Ваша заявка успешно отправлена!
+      </h2>
+      <h2 class="form__title">بارك اللّه فيكم</h2>
+      <div class="success__flower">
+        <img src="images/png/flower.png" />
+      </div>
+      <div class="success__text">
+        В ближайшее время менеджер МА`ХАДА
+        <img src="images/png/hiya.png" class="hiya20" /> <br />
+        свяжется с Вами в Telegram
+      </div>
+      <div class="success__button menu-itemm glass_button">ОК</div>
+    </div>
+
     <div class="back"></div>
+    <div class="backdrop"></div>
     <header class="header">
       <div class="wrapper">
         <nav class="nav">
@@ -21,7 +127,7 @@
               </div>
             </a>
             <ul class="coder">
-              <li class="menu-itemm glass_button">
+              <li class="menu-itemm glass_button menus" id="item-project">
                 <p>О проекте</p>
                 <ul class="items">
                   <li class="item"><a href="aboutus.html">• О Ма'хаде</a></li>
@@ -43,17 +149,23 @@
                   </li>
                 </ul>
               </li>
-              <li class="menu-itemm glass_button">
+              <li class="menu-itemm glass_button menus" id="item-study">
                 Обучение
                 <ul class="items">
-                          <li class="item"><a href="process.html">• Процесс обучения</a></li>
-                  <li class="item"><a href="programm.html">• Учебная программа</a></li>
-                  <li class="item"><a href="books.html">• Книги</a></li>
-                  <li class="item"><a href="raspisanie.html">• Расписание</a></li>
-                  <li class="item"><a href="rules.html">• Правила обучения</a></li>
-                  <li class="item"><a href="otzyv.html">• Отзывы</a></li>
+                  <li class="item">
+                    <a href="process.html">• Процесс обучения</a>
                   </li>
-
+                  <li class="item">
+                    <a href="programm.html">• Учебная программа</a>
+                  </li>
+                  <li class="item"><a href="books.html">• Книги</a></li>
+                  <li class="item">
+                    <a href="raspisanie.html">• Расписание</a>
+                  </li>
+                  <li class="item">
+                    <a href="rules.html">• Правила обучения</a>
+                  </li>
+                  <li class="item"><a href="otzyv.html">• Отзывы</a></li>
                 </ul>
               </li>
 
@@ -91,14 +203,17 @@
       </div>
     </header>
 
-  
     <main class="">
       <section class="main">
-        <h1 class="main__header">Мусульманка <br> защищенная знанием</h1>
+        <h1 class="main__header">
+          Мусульманка <br />
+          защищенная знанием
+        </h1>
         <div class="button__wrap">
-          <div class="menu-itemm glass_button">
-            <span>стать</span><br> студенткой <br>ма'хада
-            <img class="hiya" src="images/png/hiya1.png">
+          <div class="menu-itemm glass_button start-button">
+            <span>стать</span><br />
+            студенткой <br />ма'хада
+            <img class="hiya" src="images/png/hiya1.png" />
           </div>
         </div>
         <p class="main__text">
@@ -108,129 +223,138 @@
 
       <section class="about_us">
         <div class="wrapper">
-        <!-- <div class="about__fon">
+          <!-- <div class="about__fon">
           <img src="images/png/back.png">
         </div> -->
-        <h2 class="about__title">МА`ХАД шариатских наук и арабского языка “HIYA”
-          <img src="images/png/hiya1.png" class="hiya">
-        </h2>
-        
-       <p class="about__subtitle">
-        БАЗОВОЕ ШАРИАТСКОЕ ОБРАЗОВАНИЕ ОНЛАЙН ДЛЯ  МУСУЛЬМАНОК НА РУССКОМ ЯЗЫКЕ
-       </p>
+          <h2 class="about__title">
+            МА`ХАД шариатских наук и арабского языка “HIYA”
+            <img src="images/png/hiya1.png" class="hiya" />
+          </h2>
 
-       <ul class="about__items">
-        <li class="about__item">
-          <div class="gal__container">
-            <img src="images/png/gal2.png">
-          </div>
-          <p> 
-            получи твёрдую базу знаний об Исламе на основе достоверных источников (Коран и Сунна) как это делали праведные предшественники 
+          <p class="about__subtitle">
+            БАЗОВОЕ ШАРИАТСКОЕ ОБРАЗОВАНИЕ ОНЛАЙН ДЛЯ МУСУЛЬМАНОК НА РУССКОМ
+            ЯЗЫКЕ
           </p>
-        </li>
-        <li class="about__item">
-          <div class="gal__container">
-            <img src="images/png/gal2.png">
+
+          <ul class="about__items">
+            <li class="about__item">
+              <div class="gal__container">
+                <img src="images/png/gal2.png" />
+              </div>
+              <p>
+                получи твёрдую базу знаний об Исламе на основе достоверных
+                источников (Коран и Сунна) как это делали праведные
+                предшественники
+              </p>
+            </li>
+            <li class="about__item">
+              <div class="gal__container">
+                <img src="images/png/gal2.png" />
+              </div>
+              <p>
+                изучай Ислам со стороны разных областей (Акыда, Фикх, Хадис,
+                Тафсир, Сира), чтобы исключить пробелы в понимании
+              </p>
+            </li>
+            <li class="about__item">
+              <div class="gal__container">
+                <img src="images/png/gal2.png" />
+              </div>
+              <p>
+                научись читать Благородный Коран по правилам таджуида и внедри
+                привычку регулярно выделять время Книге Аллаха
+              </p>
+            </li>
+            <li class="about__item">
+              <div class="gal__container">
+                <img src="images/png/gal2.png" />
+              </div>
+              <p>
+                начни изучать Арабский язык, чтобы понимать смыслы Корана, а
+                также получить доступ к литературе и образованию арабских стран
+              </p>
+            </li>
+          </ul>
+          <div class="about__video">
+            [Видеообращение Устазы Иман]
+            <img src="images/png/flower.png" />
           </div>
-          <p> 
-            изучай Ислам со стороны разных областей (Акыда, Фикх, Хадис, Тафсир, Сира), чтобы исключить пробелы в понимании
-          </p>
-        </li>
-        <li class="about__item">
-          <div class="gal__container">
-            <img src="images/png/gal2.png">
-          </div>
-          <p> 
-            научись читать Благородный Коран по правилам таджуида и внедри привычку регулярно выделять время Книге Аллаха
-          </p>
-        </li>
-        <li class="about__item">
-          <div class="gal__container">
-            <img src="images/png/gal2.png">
-          </div>
-          <p> 
-            начни изучать Арабский язык, чтобы понимать смыслы Корана, а также получить доступ к литературе и образованию арабских стран 
-          </p>
-        </li>
-       </ul>
-       <div class="about__video">
-        [Видеообращение Устазы Иман]
-        <img src="images/png/flower.png">
-       </div>
-      </div>
+        </div>
       </section>
 
       <section class="students">
         <div class="wrapper">
-        <p class="students__says">
-          Посланник Аллаха (ﷺ) сказал:
-        </p>
-        <p class="students__words">
-          «Тому, кто отправился в путь, желая приобрести знания, Аллах облегчит путь, ведущий в Рай ...”
-        </p>
-        <p class="students__post">
-          [Ат-Тирмизи]
-        </p>
+          <p class="students__says">Посланник Аллаха (ﷺ) сказал:</p>
+          <p class="students__words">
+            «Тому, кто отправился в путь, желая приобрести знания, Аллах
+            облегчит путь, ведущий в Рай ...”
+          </p>
+          <p class="students__post">[Ат-Тирмизи]</p>
 
-        <dvi class="students__flex">
-          <div class="student">
-            <div class="student__button">
-              <!-- <img src="images/png/buttonstud.png"> -->
-              <p class="student__button-text">
-                <span> Студентка <br></span> основного потока
+          <dvi class="students__flex">
+            <div class="student">
+              <div class="student__button">
+                <!-- <img src="images/png/buttonstud.png"> -->
+                <p class="student__button-text">
+                  <span> Студентка <br /></span> основного потока
+                </p>
+              </div>
+              <p class="student__text">
+                Обучается по комплексной программе согласно утвержденного
+                расписания занятий в течение 2 лет <br />(4 семестра по 6
+                предметов в каждом)
               </p>
             </div>
-            <p class="student__text">
-              Обучается по комплексной программе согласно утвержденного расписания занятий в течение 2 лет <br>(4 семестра по 6 предметов в каждом)
-            </p>
-          </div>
-          <div class="students__photo">
-            <img src="images/png/student2.jpg">
-          </div>
-          <div class="student">
-            <div class="student__button">
-              <!-- <img src="images/png/buttonstud.png"> -->
-              <p class="student__button-text">
-                <span> Студентка <br></span> с индивидуальным графиком
+            <div class="students__photo">
+              <img src="images/png/student2.jpg" />
+            </div>
+            <div class="student">
+              <div class="student__button">
+                <!-- <img src="images/png/buttonstud.png"> -->
+                <p class="student__button-text">
+                  <span> Студентка <br /></span> с индивидуальным графиком
+                </p>
+              </div>
+              <p class="student__text">
+                Самостоятельно выбирает количество дисциплин из программы,исходя
+                из финансовых и временных возможностей.
               </p>
             </div>
-            <p class="student__text">
-              Самостоятельно выбирает количество дисциплин из программы,исходя из финансовых и временных возможностей.
-            </p>
-          </div>
-        </dvi>
-      </div>
+          </dvi>
+        </div>
       </section>
 
       <section class="start">
         <div class="wrapper">
           <p class="start__welcome">
-            Милая сестра, мы приглашаем тебя отправиться в этот путь уже сейчас...
+            Милая сестра, мы приглашаем тебя отправиться в этот путь уже
+            сейчас...
           </p>
 
           <div class="start__button-wrap button__wrap">
-            <div class="menu-itemm glass_button">
-              <span>стать</span><br> студенткой <br>ма'хада
-              <img class="hiya" src="images/png/hiya1.png">
+            <div class="menu-itemm glass_button start-button">
+              <span>стать</span><br />
+              студенткой <br />ма'хада
+              <img class="hiya" src="images/png/hiya1.png" />
             </div>
           </div>
 
           <p class="start__arab-text">
-            اللَّهُمَّ انْفَعْنَا بِمَا عَلَّمْتَنَا وَعَلِّمْنَا مَا يَنْفَعُنَا وَزِدْنِي عِلْمًا
+            اللَّهُمَّ انْفَعْنَا بِمَا عَلَّمْتَنَا وَعَلِّمْنَا مَا
+            يَنْفَعُنَا وَزِدْنِي عِلْمًا
           </p>
           <p class="start__translate">
-            «О Господь! Сделай наши знания полезными, одари нас полезными знаниями и приумножь их»
+            «О Господь! Сделай наши знания полезными, одари нас полезными
+            знаниями и приумножь их»
           </p>
 
           <div class="contacts">
             <div class="address">
               <div class="contacts__icon">
-                <img src="images/png/home.png">
+                <img src="images/png/home.png" />
               </div>
               <div class="address__text">
-                <p class="address__title">
-                  HIYA for education and tutoring OU
-                </p>
+                <p class="address__title">HIYA for education and tutoring OU</p>
                 <p class="address__address">
                   Tina21a-7, 1026, Tallinn, Estonia
                 </p>
@@ -241,11 +365,13 @@
             </div>
             <div class="address">
               <div class="contacts__icon">
-                <img src="images/png/email.png">
+                <img src="images/png/email.png" />
               </div>
               <div class="address__text">
                 <p class="address__address">
-                  <a href="mailto:maahad.hiya@gmail.com"> maahad.hiya@gmail.com</a>
+                  <a href="mailto:maahad.hiya@gmail.com">
+                    maahad.hiya@gmail.com</a
+                  >
                 </p>
               </div>
             </div>
@@ -258,22 +384,21 @@
           <div class="footer__flex">
             <div class="footer__icon">
               <a href="">
-                <img src="images/png/telegram.png">
+                <img src="images/png/telegram.png" />
               </a>
             </div>
             <div class="footer__icon">
               <a href="">
-                <img src="images/png/instagram.png">
+                <img src="images/png/instagram.png" />
               </a>
             </div>
-            <div class="footer__mahada">
-              2024 Ма'хад HIYA
-            </div>
+            <div class="footer__mahada">2024 Ма'хад HIYA</div>
           </div>
         </div>
       </footer>
     </main>
 
-    <script src="./js/main.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/start.js"></script>
   </body>
 </html>

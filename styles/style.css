@@ -35,6 +35,24 @@ body {
   opacity: 1;
 }
 
+.backdrop {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 10;
+  opacity: 0;
+  display: none;
+}
+
+.backdrop--dark {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 30;
+  background-color: #00000090;
+  display: none;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -73,6 +91,7 @@ a {
   font-weight: 600;
   padding: 0 20px;
   position: relative;
+  z-index: 20;
 }
 .nav__logo-container {
   text-transform: uppercase;
@@ -202,7 +221,7 @@ a {
   /* display: none; */
   transition: 0.5s;
   transform: translateY(-50px);
-  background-color: rgba(252, 243, 221, 0.7);
+  background-color: rgba(252, 243, 221);
   padding: 2px;
   width: 98%;
   height: 50px;
@@ -284,6 +303,12 @@ display: block;
   justify-content: flex-end;
   color: #316d69;
   padding: 0 150px 80px 150px;
+  @media screen and (max-width: 1200px) {
+    gap: 50px;
+  }
+  @media screen and (max-width: 1000px) {
+    gap: 30px;
+  }
 }
 
 .main__header {
@@ -292,6 +317,13 @@ display: block;
   font-family: 'ElMessiri';
   text-transform: uppercase;
   padding-left: 80px;
+  @media screen and (max-width: 1200px) {
+    font-size: 35px;
+  }
+  @media screen and (max-width: 1000px) {
+    font-size: 30px;
+    padding-left: 50px;
+  }
 }
 
 .main__text {
@@ -355,7 +387,6 @@ display: block;
 .about__item {
   display: flex;
   gap: 10px;
-  height: 30px;
   align-items: center;
   color:#316d69;
   font-size: 18px;
@@ -877,6 +908,10 @@ display: block;
   width: 20px;
 }
 
+.hiya30 {
+  width: 30px;
+}
+
 .our-student__text {
   font-size: 18px;
   font-family: Lovelace;
@@ -1368,7 +1403,9 @@ display: block;
   padding: 20px;
   font-weight: 600;
   /* border: 1px solid #d1efea87; */
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  gap: 2px;
   border-radius: 30px;
   background-color: #d1efea87;
   position: relative;
@@ -1404,7 +1441,7 @@ display: block;
 
 .accord-icon {
   width: 25px;
-  position: absolute;
+  /* position: absolute; */
   right: 17px;
   top: 15px;
 }
@@ -1972,4 +2009,148 @@ display: block;
   position: relative !important;
   margin-top: 30px;
 }
+
+
+/*Modal Anketa*/
+
+.form__modal,
+.success {
+  display: none;
+  z-index: 40;
+  width: 80vw;
+  background-color: #fffbf7;
+  border-radius: 20px;
+  position: fixed;
+  padding: 30px 40px;
+  font-family: Lovelace;
+  color: #316d69;
+  max-width: 800px;
+  @media screen and (max-width: 1000px) {
+    left: calc(50% - 40vw);
+  }
+  @media screen and (max-width: 800px) {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+  }
+}
+
+.form__modal {
+  left: calc(50% - 400px);
+  top: calc(50% - 40vh);
+}
+
+.form__title {
+  font-size: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px; 
+
+  @media screen and (max-width: 1000px) {
+    font-size: 30px;
+  }
+  @media screen and (max-width: 800px) {
+    font-size: 22px;
+  }
+}
+
+.form__title span {
+  color: #69c8c3;
+}
+
+.form {
+  margin: 20px 0;
+}
+
+.form__flower {
+  width: 100px;
+  position: absolute;
+  right: -20px;
+  bottom: 50px;
+}
+
+.form__flower img {
+  width: 100%;
+  transform: rotate(90deg);
+}
+
+.form button {
+  padding: 0;
+  padding-block: 0;
+  padding-inline: 0;
+  margin-top: 30px;
+  margin-left: 450px;
+  @media screen and (max-width: 1000px) {
+    margin-left: calc(80vw - 350px);
+  }
+}
+
+.form .menu-itemm::before {
+  margin-top: -13px;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+}
+
+.form__input {
+  display: block;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px 0;
+  width: 100%;
+  font-size: 18px;
+  font-family: Lovelace;
+  background-color: #fffbf7;
+  /* color: #00000020; */
+  color: #316d69;
+}
+
+.form__label {
+  margin-top: 40px;
+}
+
+.checkbox {
+  margin-top: 40px;
+}
+
+.success {
+  display: none;
+  left: calc(50% - 400px);
+  top: calc(50% - 20vh);
+  text-align: center;
+}
+
+.success__flower {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.success__title {
+  font-size: 28px;
+}
+
+.success__text {
+  font-size: 18px;
+}
+
+.success__flower img {
+  width: 100%;
+}
+
+.success__button {
+  margin: 30px auto;
+}
+
+
+.is-active {
+  display: block;
+}
+
+
+.modal-active {
+  display: block;
+}
+
 

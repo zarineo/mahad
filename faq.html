@@ -7,6 +7,7 @@
     <title>Тест</title>
   </head>
   <body>
+    <div class="backdrop"></div>
     <header class="header">
       <div class="wrapper">
         <nav class="nav">
@@ -20,7 +21,7 @@
               </div>
             </a>
             <ul class="coder">
-              <li class="menu-itemm glass_button">
+              <li class="menu-itemm glass_button menus" id="item-project">
                 <p>О проекте</p>
                 <ul class="items">
                   <li class="item"><a href="aboutus.html">• О Ма'хаде</a></li>
@@ -42,14 +43,22 @@
                   </li>
                 </ul>
               </li>
-              <li class="menu-itemm glass_button">
+              <li class="menu-itemm glass_button menus" id="item-study">
                 Обучение
                 <ul class="items">
-                  <li class="item"><a href="process.html">• Процесс обучения</a></li>
-                  <li class="item"><a href="programm.html">• Учебная программа</a></li>
+                  <li class="item">
+                    <a href="process.html">• Процесс обучения</a>
+                  </li>
+                  <li class="item">
+                    <a href="programm.html">• Учебная программа</a>
+                  </li>
                   <li class="item"><a href="books.html">• Книги</a></li>
-                  <li class="item"><a href="raspisanie.html">• Расписание</a></li>
-                  <li class="item"><a href="rules.html">• Правила обучения</a></li>
+                  <li class="item">
+                    <a href="raspisanie.html">• Расписание</a>
+                  </li>
+                  <li class="item">
+                    <a href="rules.html">• Правила обучения</a>
+                  </li>
                   <li class="item"><a href="otzyv.html">• Отзывы</a></li>
                 </ul>
               </li>
@@ -101,8 +110,12 @@
                 class="accordion-item__input"
               />
               <label class="accordion-item__trigger" for="accordion-1">
-                Можно начать обучение в любое время или только в сентябре?
-                <img src="images/png/accord.png" class="accord-icon" />
+                <p class="accordion-item__trigger-text">
+                  Можно начать обучение в любое время или только в сентябре?
+                </p>
+                <div>
+                  <img src="images/png/accord.png" class="accord-icon" />
+                </div>                
               </label>
               <div class="accordion-item__content">
                 Прием в МА`ХАД проходит раз в год с 1 августа по 10 сентября
@@ -117,7 +130,9 @@
               <label class="accordion-item__trigger" for="accordion-2">
                 Я никогда не изучала Исламские предметы. Нужно ли знать
                 арабский, чтобы учиться в МА`ХАДе?
-                <img src="images/png/accord.png" class="accord-icon" />
+                <div>
+                  <img src="images/png/accord.png" class="accord-icon" />
+                </div> 
               </label>
               <div class="accordion-item__content">
                 Программа МА`ХАДА на русском языке и подходит даже тем, кто
@@ -132,7 +147,9 @@
               />
               <label class="accordion-item__trigger" for="accordion-3">
                 Можно ли учиться бесплатно?
-                <img src="images/png/accord.png" class="accord-icon" />
+                <div>
+                  <img src="images/png/accord.png" class="accord-icon" />
+                </div> 
               </label>
               <div class="accordion-item__content">
                 Полностью бюджетных мест не предусмотрено. Однако для тех
@@ -149,7 +166,9 @@
               />
               <label class="accordion-item__trigger" for="accordion-5">
                 Нужно ли приобретать книги?
-                <img src="images/png/accord.png" class="accord-icon" />
+                <div>
+                  <img src="images/png/accord.png" class="accord-icon" />
+                </div> 
               </label>
               <div class="accordion-item__content">
                 По Вашему желанию. Все необходимые книги и материалы будут
@@ -165,7 +184,9 @@
               />
               <label class="accordion-item__trigger" for="accordion-6">
                 Получу ли я документ об образовании?
-                <img src="images/png/accord.png" class="accord-icon" />
+                <div>
+                  <img src="images/png/accord.png" class="accord-icon" />
+                </div> 
               </label>
               <div class="accordion-item__content">
                 После успешного окончания полной программы Cтудентка получает
@@ -185,7 +206,9 @@
               />
               <label class="accordion-item__trigger" for="accordion-7">
                 Можно ли вернуть оплату, если мне не подойдёт обучение?
-                <img src="images/png/accord.png" class="accord-icon" />
+                <div>
+                  <img src="images/png/accord.png" class="accord-icon" />
+                </div> 
               </label>
               <div class="accordion-item__content">
                 В начале 1 семестра предусмотрена тестовая неделя. Если
@@ -205,7 +228,9 @@
               <label class="accordion-item__trigger" for="accordion-8">
                 Можно ли перевестись с основного потока на индивидуальный
                 график?
-                <img src="images/png/accord.png" class="accord-icon" />
+                <div>
+                  <img src="images/png/accord.png" class="accord-icon" />
+                </div> 
               </label>
               <div class="accordion-item__content">
                 Если СТУДЕНТКА ОСНОВНОГО ПОТОКА не справляется с программой
@@ -242,6 +267,6 @@
       </footer>
     </main>
 
-    <script src="./js/main.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

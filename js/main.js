@@ -1,14 +1,28 @@
-console.log('hello');
-  
-  document.querySelectorAll('.menu-itemm').forEach(item => {
-    item.addEventListener('click', function (e) {
-      const subMenu = this.querySelector('.items');
-      if (subMenu) {
-        // e.preventDefault(); // Предотвращает переход по ссылке
-        subMenu.classList.toggle('active');
+  const backdrop = document.querySelector('.backdrop');
+  const subMenus = document.querySelectorAll('.items');
+  const menus = document.querySelectorAll('.menus');
+
+  for (let i = 0; i < menus.length; i++) {
+    menus[i].addEventListener('click', () => {
+      if (subMenus[i].classList.contains('active')){
+        subMenus[i].classList.remove('active');
+      } else {
+        subMenus.forEach((item) => {
+          item.classList.remove('active');
+        })
+        subMenus[i].classList.add('active');
+        backdrop.classList.add('is-active');
       }
-    });
-  });
+     
+    })
+  }
+
+  backdrop.addEventListener('click', () => {
+    backdrop.classList.remove('is-active');
+    for (let item of subMenus){
+      item.classList.remove('active');
+    }
+  })
 
   const swiper = new Swiper('.swiper', {
     // Optional parameters
@@ -18,15 +32,12 @@ console.log('hello');
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
       },
-    
     slidesPerView: 1,
     mousewheel: {
       forceToAxis: true,
     },
-  
   });

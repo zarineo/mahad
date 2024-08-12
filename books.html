@@ -7,6 +7,7 @@
     <title>Тест</title>
   </head>
   <body>
+    <div class="backdrop"></div>
     <header class="header">
       <div class="wrapper">
         <nav class="nav">
@@ -20,7 +21,7 @@
               </div>
             </a>
             <ul class="coder">
-              <li class="menu-itemm glass_button">
+              <li class="menu-itemm glass_button menus" id="item-project">
                 <p>О проекте</p>
                 <ul class="items">
                   <li class="item"><a href="aboutus.html">• О Ма'хаде</a></li>
@@ -42,7 +43,7 @@
                   </li>
                 </ul>
               </li>
-              <li class="menu-itemm glass_button">
+              <li class="menu-itemm glass_button menus" id="item-study">
                 Обучение
                 <ul class="items">
                   <li class="item">
@@ -99,87 +100,71 @@
     <main class="">
       <section class="books">
         <div class="wrapper">
-          <h1 class="main__header">
-            Книги
-          </h1>
+          <h1 class="main__header">Книги</h1>
           <table class="books__table">
             <tr class="books__row">
-              <th class="books__name">
-                Таджуид
-              </th>
-              <th class="books__description">
-                Авторская программа устаз
-              </th>
+              <th class="books__name">Таджуид</th>
+              <th class="books__description">Авторская программа устаз</th>
             </tr>
             <tr class="books__row">
-              <th class="books__name">
-                Тафсир
-              </th>
+              <th class="books__name">Тафсир</th>
               <th class="books__description">
                 <p class="books__table-text">
                   زبدة التفسير محمد سليمان الأشقر ( مختصر من فتح القديرللشوكاني)
                 </p>
                 <p class="books__table-text">
-                  + классическая литература, толкование  Ибн Касира, Ат-Табари
+                  + классическая литература, толкование Ибн Касира, Ат-Табари
                 </p>
               </th>
             </tr>
             <tr class="books__row">
-              <th class="books__name">
-                Арабский язык
-              </th>
+              <th class="books__name">Арабский язык</th>
               <th class="books__description">
-                العربية بين يديك + العربية للناشئين
-                + авторская методика устаз
+                العربية بين يديك + العربية للناشئين + авторская методика устаз
               </th>
             </tr>
             <tr class="books__row">
-              <th class="books__name">
-                Акъида
-              </th>
+              <th class="books__name">Акъида</th>
               <th class="books__description">
                 1. Салих бин Фаузан Аль-Фаузан الإرشاد إلى صحيح الإعتقاد
-                <br>2. Салих бин Фаузан Аль-Фаузан عقيدة التوحيد
-                <br>3. Али бин Аби Аль-Из Аль-Ханафи المنحة الإهية في تهذيب الطحاوية
-                <br>4. Мухаммад бин Ибрахим Ат-Тувайджари مختصر الفقه الإسلامي
+                <br />2. Салих бин Фаузан Аль-Фаузан عقيدة التوحيد <br />3. Али
+                бин Аби Аль-Из Аль-Ханафи المنحة الإهية في تهذيب الطحاوية
+                <br />4. Мухаммад бин Ибрахим Ат-Тувайджари مختصر الفقه الإسلامي
               </th>
             </tr>
             <tr class="books__row">
-              <th class="books__name">
-                Фикъх
-              </th>
+              <th class="books__name">Фикъх</th>
               <th class="books__description">
                 الفقه الميسر
-                <br> Аль-Фикх Аль-Муйассир
-                <br>
-                Авторы: Шейх доктор Абдуллах Ат-Таййар (профессор фикха в университете Аль-Касым), Шейх доктор Абдуллах Аль-Мутлак (член комиссии больших ученых (кибар аль-уляма), Шейх Мухаммад Аль-Муса (член меджлиса шуры при министерстве по вакуфам).
+                <br />
+                Аль-Фикх Аль-Муйассир
+                <br />
+                Авторы: Шейх доктор Абдуллах Ат-Таййар (профессор фикха в
+                университете Аль-Касым), Шейх доктор Абдуллах Аль-Мутлак (член
+                комиссии больших ученых (кибар аль-уляма), Шейх Мухаммад
+                Аль-Муса (член меджлиса шуры при министерстве по вакуфам).
               </th>
             </tr>
             <tr class="books__row">
-              <th class="books__name">
-                Хадис
-              </th>
+              <th class="books__name">Хадис</th>
               <th class="books__description">
-                شرح الاربعين النووية
-                
-                Шарх 40 хадисов Имама Ан-Науауий. Шейх Аль-Мухсин
+                شرح الاربعين النووية Шарх 40 хадисов Имама Ан-Науауий. Шейх
+                Аль-Мухсин
               </th>
             </tr>
             <tr class="books__row--end">
-              <th class="books__name">
-                Сира
-              </th>
+              <th class="books__name">Сира</th>
               <th class="books__description">
-                الرحيق المختوم
-                Сафи-ар-Рахман Аль-Мубаракфури
+                الرحيق المختوم Сафи-ар-Рахман Аль-Мубаракфури
               </th>
             </tr>
           </table>
 
           <p class="books__text--bold">
-            На учебном портале Студентка найдет необходимую литературу и материалы по предметам (ссылки на ресурсы с электронной версией книг, PDF формат..)
+            На учебном портале Студентка найдет необходимую литературу и
+            материалы по предметам (ссылки на ресурсы с электронной версией
+            книг, PDF формат..)
           </p>
-
         </div>
       </section>
 
@@ -202,6 +187,6 @@
       </footer>
     </main>
 
-    <script src="./js/main.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
