@@ -26,7 +26,7 @@
           type="text"
           class="form__input"
           value=""
-          placeholder="Дата рождения"
+          placeholder="Возраст"
           name="userDate"
           required
         />
@@ -40,8 +40,9 @@
         />
         <input
           type="text"
-          class="form__input"
+          class="form__input form__input--small"
           value=""
+          title=""
           placeholder="Контакт в телеграм (обязательно проверьте настройки Вашего аккаунта, чтобы мы могли связаться)"
           name="userCountry"
           required
@@ -100,6 +101,10 @@
         Дорогая сестра, <br />
         Ваша заявка успешно отправлена!
       </h2>
+      <div class="modal-close success__button">
+        <span></span>
+        <span></span>
+      </div>
       <h2 class="form__title">بارك اللّه فيكم</h2>
       <div class="success__flower">
         <img src="images/png/flower.png" />
@@ -109,7 +114,6 @@
         <img src="images/png/hiya.png" class="hiya20" /> <br />
         свяжется с Вами в Telegram
       </div>
-      <div class="success__button menu-itemm glass_button">ОК</div>
     </div>
 
     <div class="back"></div>
@@ -127,6 +131,10 @@
               </div>
             </a>
             <ul class="coder">
+              <div class="menu__close" id="close-menu">
+                <span></span>
+                <span></span>
+              </div>
               <li class="menu-itemm glass_button menus" id="item-project">
                 <p>О проекте</p>
                 <ul class="items">
@@ -195,6 +203,10 @@
               </ul> -->
             </ul>
 
+            <div class="mobile-menu">
+              
+            </div>
+
             <div class="hamburger">
               <span></span>
               <span></span>
@@ -215,7 +227,7 @@
           <div class="menu-itemm glass_button start-button">
             <span>стать</span><br />
             студенткой <br />ма'хада
-            <img class="hiya" src="images/png/hiya1.png" />
+            <img class="hiya" src="images/png/hiya.png" />
           </div>
         </div>
         <p class="main__text">
@@ -230,7 +242,7 @@
         </div> -->
           <h2 class="about__title">
             МА`ХАД шариатских наук и арабского языка “HIYA”
-            <img src="images/png/hiya1.png" class="hiya" />
+            <img src="images/png/hiya.png" class="hiya" />
           </h2>
 
           <p class="about__subtitle">
@@ -254,8 +266,8 @@
                 <img src="images/png/gal2.png" />
               </div>
               <p>
-                изучай Ислам со стороны разных областей (Акыда, Фикх, Хадис,
-                Тафсир, Сира), чтобы исключить пробелы в понимании
+                изучай Исламские дисциплины комплексно, чтобы исключить пробелы
+                в понимании
               </p>
             </li>
             <li class="about__item">
@@ -272,8 +284,17 @@
                 <img src="images/png/gal2.png" />
               </div>
               <p>
-                начни изучать Арабский язык, чтобы понимать смыслы Корана, а
-                также получить доступ к литературе и образованию арабских стран
+                начни изучать Арабский язык, чтобы понимать смыслы Корана и
+                арабскую литературу в оригинале
+              </p>
+            </li>
+            <li class="about__item">
+              <div class="gal__container">
+                <img src="images/png/gal2.png" />
+              </div>
+              <p>
+                погрузись в чтение трудов известных учёных под руководством
+                наших высококвалифицированных устаз
               </p>
             </li>
           </ul>
@@ -295,15 +316,15 @@
 
           <dvi class="students__flex">
             <div class="student">
-              <div class="student__button">
+              <a href="format.html" class="student__button">
                 <!-- <img src="images/png/buttonstud.png"> -->
                 <p class="student__button-text">
                   <span> Студентка <br /></span> основного потока
                 </p>
-              </div>
+              </a>
               <p class="student__text">
-                Обучается по комплексной программе согласно утвержденного
-                расписания занятий в течение 2 лет <br />(4 семестра по 6
+                Обучается по <b>комплексной программе</b> согласно утвержденного
+                расписания занятий<b> в течение 2 лет</b> <br />(4 семестра по 6
                 предметов в каждом)
               </p>
             </div>
@@ -311,15 +332,16 @@
               <img src="images/png/student2.jpg" />
             </div>
             <div class="student">
-              <div class="student__button">
+              <a href="format.html" class="student__button">
                 <!-- <img src="images/png/buttonstud.png"> -->
                 <p class="student__button-text">
                   <span> Студентка <br /></span> с индивидуальным графиком
                 </p>
-              </div>
+              </a>
               <p class="student__text">
-                Самостоятельно выбирает количество дисциплин из программы,исходя
-                из финансовых и временных возможностей.
+                <b>Сама выбирает сколько дисциплин</b> хочет изучать в семестре,
+                <b>ориентируясь</b> на свои <b>финансы</b> и свободное
+                <b>время</b>
               </p>
             </div>
           </dvi>
@@ -337,7 +359,7 @@
             <div class="menu-itemm glass_button start-button">
               <span>стать</span><br />
               студенткой <br />ма'хада
-              <img class="hiya" src="images/png/hiya1.png" />
+              <img class="hiya" src="images/png/hiya.png" />
             </div>
           </div>
 

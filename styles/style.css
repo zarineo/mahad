@@ -9,8 +9,13 @@
 }
 
 @font-face {
+  font-family: 'Amiri';
+  src: url(../fonts/Amiri/Amiri-Bold.ttf);
+}
+
+@font-face {
   font-family: 'Lovelace';
-  src: url(../fonts/Lovelace/Lovelace-Regular.ttf);
+  src: url(../fonts/Lovelace/Lovelace-Regular.otf);
 }
 
 @font-face {
@@ -81,7 +86,6 @@ a {
   top: 0;
   background: rgb(209,239,234);
   /* background: rgb(209,239,234); */
-
   color: #316d69;
   /* padding-top: 30px; */
 }
@@ -108,9 +112,13 @@ a {
 
 .wrap {
   display: flex;
-  /* justify-content: space-between; */
   width: 100%;
   margin: 0 auto;
+  padding: 0 20px;
+  @media screen and (max-width: 800px) {
+    padding: 10px 0;
+    justify-content: space-between;
+  }
 }
 .coder {
   display: flex;
@@ -121,6 +129,43 @@ a {
   flex-shrink: 1;
   width: 90%;
   /* height: 50px; */
+  @media screen and (max-width: 800px) {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #eaf6f1;
+    margin: 0;
+    top: 0;
+    left: 0;
+  }
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  width: 40px;
+  @media screen and (max-width: 800px) {
+    display: flex;
+  }
+}
+
+.hamburger span {
+  display: block;
+  height: 5px;
+  background-color: #316d69;
+  width: 100%;
+}
+
+.mobile-menu {
+  display: none;
+
+  @media screen and (max-width: 800px) {
+    display: block;
+  }
+
 }
 
 .menu-itemm {
@@ -154,6 +199,9 @@ a {
   display: block;
   text-decoration: none;
   flex-shrink: 1;
+  @media screen and (max-width: 800px) {
+    width: 100%; 
+  }
 }
 
 .menu-itemm:active {
@@ -177,7 +225,6 @@ a {
   border-radius:16px; 
   display:block;
   /* min-width: 0; */
-
 }
 
 .menu-itemm--big {
@@ -202,6 +249,9 @@ a {
   max-width: 200px;
   height: 120px;
   position: relative;
+  @media screen and (max-width: 800px) {
+    height: 60px;
+  }
 }
 
 .logo img {
@@ -298,18 +348,21 @@ display: block;
 .main {
   height: 100vh;
   /* width: 60%; */
-  width: 905px;
   display: flex;
   flex-direction: column;
-  gap: 90px;
+  gap: 30px;
   justify-content: flex-end;
   color: #316d69;
   padding: 0 150px 80px 150px;
   @media screen and (max-width: 1200px) {
     gap: 50px;
+    width: 100%;
   }
   @media screen and (max-width: 1000px) {
     gap: 30px;
+  }
+  @media screen and (max-width: 800px) {
+    padding: 30px;    
   }
 }
 
@@ -392,7 +445,7 @@ display: block;
   align-items: center;
   color:#316d69;
   font-size: 18px;
-  font-family: 'LovelaceLight';
+  font-family: 'Lovelace';
   margin: 35px 0;
 }
 
@@ -434,6 +487,9 @@ display: block;
   font-family: 'ElMessiri';
   margin: 0 auto;
   position: relative;
+  @media screen and (max-width: 800px) {
+    font-size: 16px;  
+  }
 }
 
 .about__video img {
@@ -456,7 +512,7 @@ display: block;
 .students__says,
 .students__post {
   color:#316d69;
-  font-family: LovelaceLight;
+  font-family: Lovelace;
   font-size: 25px;
 }
 
@@ -531,7 +587,7 @@ display: block;
 
 .student__text {
   font-size: 20px;
-  font-family: LovelaceLight;
+  font-family: Lovelace;
   color: #316d69;
   line-height: 40px;
   text-align: center;
@@ -564,7 +620,8 @@ display: block;
 }
 
 .start__arab-text {
-  font-size: 25px;
+  font-size: 28px;
+  font-family: Amiri;
   color: #316d69;
   text-align: center;
   margin-bottom: 20px;
@@ -640,7 +697,7 @@ display: block;
   letter-spacing: 2px;
 }
 
-/*Страница О нас - Махад*/
+/*Страница О нас - МА'ХАД*/
 
 .mahad {
   padding: 200px 100px 100px;
@@ -661,9 +718,10 @@ display: block;
 .mahad__title {
   color: #69c8c3;
   font-family: ElMessiri;
-  font-size: 40px;
+  font-size: 38px;
   margin-bottom: 5px;
   margin-top: 30px;
+  line-height: 38px;
 }
 
 .flower {
@@ -692,6 +750,16 @@ display: block;
 .flower-bottom {
   left: calc(50% - 100px);
   bottom: -46px;
+}
+
+.flower-top--right {
+  left: 70%;
+  transform: rotate(0deg);
+}
+
+.flower-top--left {
+  left: 20%;
+  transform: rotate(180deg);
 }
 
 .mahad__text,
@@ -814,6 +882,9 @@ display: block;
   padding: 150px 30% 50px 60px;
   background-image: url('../images/png/mission.png');
   background-size: cover;
+  @media screen and (max-width: 800px) {
+    padding: 30px;    
+  }
 }
 
 .mission__text {
@@ -883,6 +954,9 @@ display: block;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom -60px right -300px;
+  @media screen and (max-width: 800px) {
+    padding: 30px;    
+  }
 }
 
 .our-student .main__header {
@@ -924,6 +998,9 @@ display: block;
 
 .ustaza {
   padding: 150px 40px 40px 40px;
+  @media screen and (max-width: 800px) {
+    padding: 30px;    
+  }
 }
 
 .ustaza__flex {
@@ -1062,6 +1139,9 @@ display: block;
   font-family: Lovelace;
   color: #316d69;
   font-size: 20px;
+  @media screen and (max-width: 800px) {
+    padding: 30px;    
+  }
 }
 
 .format__text {
@@ -1234,7 +1314,8 @@ display: block;
 .hadis__arab-text,
 .hadis__description {
   font-weight: 600;
-  font-size: 22px;
+  font-size: 28px;
+  font-family: Amiri;
 }
 
 .hadis__post {
@@ -1257,6 +1338,9 @@ display: block;
   padding: 150px 50px 50px 50px;
   color:#316d69;
   position: relative;
+  @media screen and (max-width: 800px) {
+    padding: 30px;    
+  }
 }
 
 .price .main__subtitle {
@@ -1277,7 +1361,7 @@ display: block;
 .table {
   border: 2px solid #316d697c;
   border-collapse: collapse;
-  width: 75%;
+  width: 70%;
   font-family: ElMessiri;
   margin-bottom: 60px;
   margin-top: 20px;
@@ -1355,14 +1439,13 @@ display: block;
   font-size: 25px;
   margin-bottom: 40px;
 }
-
+/* 
 .support__text {
   text-align: center;
-}
+} */
 
 .support__block {
   width: fit-content;
-  margin: 0 auto;
 }
 
 .support__block--right {
@@ -1373,9 +1456,6 @@ display: block;
   margin: 30px 0;
 }
 
-.support__important {
-  width: 70%;
-}
 
 #apply {
   text-shadow: none;
@@ -1474,8 +1554,9 @@ display: block;
 .process__item {
   background: #fffbf7;
   padding: 10px;
+  padding-left: 20px;
   border-radius: 20px;
-  text-align: center;
+  text-align: left;
   position: relative;
 }
 
@@ -1527,28 +1608,28 @@ display: block;
 }
 
 #two {
-  animation-delay: 4s;
+  animation-delay: 2s;
 }
 
 #three {
-  animation-delay: 7s;
+  animation-delay: 3s;
 }
 
 #four {
-  animation-delay: 10s;
+  animation-delay: 4s;
 }
 
 #five {
-  animation-delay: 14s;
+  animation-delay: 5s;
 }
 #six {
-  animation-delay: 17s;
+  animation-delay: 6s;
 }
 #seven {
-  animation-delay: 20s;
+  animation-delay: 7s;
 }
 #eight {
-  animation-delay: 23s;
+  animation-delay: 8s;
 }
 
 /*Programm*/
@@ -1558,7 +1639,7 @@ display: block;
 .programm__main-block {
   position: relative;
   border: #316d69 solid 2px;
-  padding: 10px 70px;
+  padding: 35px 30px;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -1825,6 +1906,7 @@ display: block;
   margin-top: 50px;
   margin-bottom: 30px;
   justify-content: space-around;
+  /* justify-content: flex-start; */
 }
 
 .schedule__day {
@@ -1836,18 +1918,29 @@ display: block;
   gap: 5px;
   font-weight: 600;
   align-items: center;
-  padding: 20px 30px 40px 30px;
+  padding: 20px 30px 20px 30px;
   position: relative;
+  /* max-width: 250px; */
 }
 
 .schedule__weekday {
-  font-size: 40px;
+  font-size: 25px;
   border-bottom: 1px solid #69c8c3;
   padding: 0 15px;
 }
 
 .schedule__course {
-  font-size: 35px;
+  font-size: 22px;
+}
+
+.schedule__course--lvl {
+  font-size: 10px;
+}
+.schedule__teacher {
+  color: #69c8c3;
+  font-size: 12px;
+  margin-top: 20px;
+  text-align: left;
 }
 
 .schedule__time {
@@ -2018,6 +2111,7 @@ display: block;
 
 .form__modal,
 .success {
+  position: relative;
   display: none;
   z-index: 40;
   width: 80vw;
@@ -2061,6 +2155,48 @@ display: block;
 
 .form__title span {
   color: #69c8c3;
+}
+
+.modal-close,
+.menu__close {
+  display: flex;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  margin-left: auto;
+  width: 32px;
+  height: 32px;
+  padding: 6px;
+  cursor: pointer;
+}
+
+.modal-close span,
+.menu__close span {
+  display: block;
+  position: absolute;
+  right: 2px;
+  top: 15px;
+  width: 27px;
+  height: 2px;
+  background: #69c8c3;
+}
+
+.modal-close span:nth-child(1),
+.menu__close span:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+.modal-close span:nth-child(2),
+.menu__close span:nth-child(2)  {
+  transform: rotate(-45deg);
+}
+
+.menu__close {
+  display: none;
+  @media screen and (max-width: 800px) {
+    display: flex;
+    
+  }
 }
 
 .form {
@@ -2110,6 +2246,10 @@ display: block;
   color: #316d69;
 }
 
+.form__input--small::-webkit-input-placeholder {
+  font-size: 12px;
+}
+
 .form__label {
   margin-top: 40px;
 }
@@ -2140,10 +2280,6 @@ display: block;
 
 .success__flower img {
   width: 100%;
-}
-
-.success__button {
-  margin: 30px auto;
 }
 
 .is-active {
@@ -2276,6 +2412,35 @@ display: block;
 }
 
 #chose-messenger {
+  /* display: block; */
+}
+
+#details {
   display: block;
 }
 
+.details__form {
+  margin-top: 20px;
+}
+
+.details__input {
+  padding: 2px;
+  border-radius: 5px;
+  border: 1px #000 solid;
+  color: #000;
+}
+
+.details__input-name {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #909090;
+}
+
+.details__text {
+  text-align: center;
+}
+
+
+.opacity {
+  opacity: 0;
+}
