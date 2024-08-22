@@ -438,6 +438,9 @@ a {
 .button__wrap {
   /* text-align: center; */
   padding-left: 25%;
+  @media screen and (max-width: 800px) {
+    padding-left: 0;    
+  }
 }
 
 
@@ -487,6 +490,7 @@ a {
 
 .about__title {
   font-size: 40px;
+  line-height: 40px;
   font-family: 'ElMessiri';
   color: #69c8c3;
   position: relative;
@@ -505,6 +509,10 @@ a {
   color: #316d69;
   text-transform: uppercase;
   margin-bottom: 75px;
+  @media screen and (max-width: 800px) {
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
 }
 
 .about__video {
@@ -2554,7 +2562,7 @@ a {
   position: relative;
   width: 50%;
   @media screen and (max-width: 800px) {
-    width: 100%;
+    width: 80%;
   }
 }
 
