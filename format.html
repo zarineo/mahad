@@ -9,8 +9,13 @@
   <body>
     <div class="backdrop--dark"></div>
     <div class="form__modal">
+      <div class="modal-close success__button">
+        <span></span>
+        <span></span>
+      </div>
       <h2 class="form__title">
-        <p>Анкета для поступления в &nbsp <span> МА'ХАД</span> </p><img src="images/png/hiya.png" class="hiya50">
+        <p>Анкета для поступления в &nbsp <span> МА'ХАД</span></p>
+        <img src="images/png/hiya.png" class="hiya50" />
       </h2>
       <form class="form" onsubmit="event.preventDefault();">
         <input
@@ -25,7 +30,7 @@
           type="text"
           class="form__input"
           value=""
-          placeholder="Дата рождения"
+          placeholder="Возраст"
           name="userDate"
           required
         />
@@ -39,8 +44,9 @@
         />
         <input
           type="text"
-          class="form__input"
+          class="form__input form__input--small"
           value=""
+          title=""
           placeholder="Контакт в телеграм (обязательно проверьте настройки Вашего аккаунта, чтобы мы могли связаться)"
           name="userCountry"
           required
@@ -77,31 +83,41 @@
           name="userArabLvl"
           required
         />
-        <label name="ozn" class="form__label"> 
-          <input type="checkbox" name="ozn" required>
-          Ознакомлена с условиями договора</label>
-        <button type="submit" class="form__button menu-itemm glass_button" id="sendData"> Отправить заявку </button>
+        <label name="ozn" class="form__label">
+          <input type="checkbox" name="ozn" required />
+          Ознакомлена с условиями договора</label
+        >
+        <button
+          type="submit"
+          class="form__button menu-itemm glass_button"
+          id="sendData"
+        >
+          Отправить заявку
+        </button>
         <div class="form__flower">
-          <img src="images/png/flower.png">
+          <img src="images/png/flower.png" />
         </div>
       </form>
     </div>
 
     <div class="success">
       <h2 class="form__title success__title">
-        Дорогая сестра, <br> Ваша заявка успешно отправлена!
+        Дорогая сестра, <br />
+        Ваша заявка успешно отправлена!
       </h2>
-      <h2 class="form__title">
-        بارك اللّه فيكم
-      </h2>
+      <div class="modal-close success__button">
+        <span></span>
+        <span></span>
+      </div>
+      <h2 class="form__title">بارك اللّه فيكم</h2>
       <div class="success__flower">
-        <img src="images/png/flower.png">
+        <img src="images/png/flower.png" />
       </div>
       <div class="success__text">
-        В ближайшее время менеджер МА`ХАДА <img src="images/png/hiya.png" class="hiya20"> 
-        <br> свяжется с Вами в Telegram
+        В ближайшее время менеджер МА`ХАДА
+        <img src="images/png/hiya.png" class="hiya20" /> <br />
+        свяжется с Вами в Telegram
       </div>
-      <div class="success__button menu-itemm glass_button">ОК</div>
     </div>
     <div class="backdrop"></div>
     <header class="header">
