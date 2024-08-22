@@ -2,6 +2,21 @@
   const subMenus = document.querySelectorAll('.items');
   const menus = document.querySelectorAll('.menus');
 
+  const hamburger = document.querySelector('.hamburger');
+  const mobileMenu = document.querySelector('.mobile-menu');
+
+  const openMobileMenu = () => {
+    mobileMenu.classList.add('is-active');
+  }
+
+  hamburger.addEventListener('click', openMobileMenu);
+
+  mobileMenu.querySelector('.menu__close').addEventListener('click', () => {
+    mobileMenu.classList.remove('is-active');
+  })
+
+  
+
   for (let i = 0; i < menus.length; i++) {
     menus[i].addEventListener('click', () => {
       if (subMenus[i].classList.contains('active')){

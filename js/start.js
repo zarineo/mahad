@@ -5,7 +5,7 @@
 
   const success = document.querySelector('.success');
   const sendData = document.querySelector('#sendData');
-  const successButton = document.querySelector('.success__button');
+  const successButtons = document.querySelectorAll('.success__button');
 
   const openModal = () => {
     formModal.classList.add('modal-active');
@@ -25,12 +25,17 @@
 
   const closeSuccess = () => {
     success.classList.remove('modal-active');
+    formModal.classList.remove('modal-active');
     backdropDark.classList.remove('is-active');
   }
 
   sendData.addEventListener('click', openSuccess);
-  successButton.addEventListener('click', closeSuccess);
+
+  successButtons.forEach((successButton) => {
+    successButton.addEventListener('click', closeSuccess);
+  })
   
+
   startButtons.forEach((startButton) => {
     startButton.addEventListener('click', openModal);
     backdropDark.addEventListener('click', closeModal);
