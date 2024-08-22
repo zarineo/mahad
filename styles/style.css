@@ -2286,11 +2286,6 @@ display: block;
   display: block;
 }
 
-.modal-active {
-  display: block;
-}
-
-
 /*support the project*/
 
 .support-project {
@@ -2326,12 +2321,13 @@ display: block;
 }
 
 .support-project__item-title {
-  font-weight: 600;
   text-align: center;
 }
 
 .support-project__item-title span {
   text-transform: uppercase;
+  font-weight: 600;
+  font-size: large;
 }
 
 .finger {
@@ -2446,4 +2442,8 @@ display: block;
 
 .opacity {
   opacity: 0;
+}
+
+.modal-active {
+  display: block;
 }

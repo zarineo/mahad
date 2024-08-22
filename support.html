@@ -7,26 +7,26 @@
     <title>Тест</title>
   </head>
   <body>
-    <div class="chose-cart__modal" id="chose-cart">
+    <div class="chose-cart__modal" id="chose-cart__modal">
       <h2 class="form__title">بارك اللّه فيكم</h2>
       <div class="chose-cart__flower">
         <img src="images/png/flower.png" />
       </div>
       <div class="support-project__flex">
-        <div class="support-project__item">
+        <div class="support-project__item" id="foreign-cart__button">
           <p class="support-project__item-title">
             Для держателей зарубежных карт
           </p>
           <img src="images/png/finger.svg" class="finger" />
         </div>
-        <div class="support-project__item">
+        <a href="https://t.me/manager_mahad_hiya" class="support-project__item" id="rf-cart__button">
           <p class="support-project__item-title">Для держателей карт РФ</p>
           <img src="images/png/finger.svg" class="finger" />
-        </div>
+        </a>
       </div>
     </div>
 
-    <div class="chose-cart__modal" id="chose-messenger">
+    <div class="chose-cart__modal" id="chose-messenger__modal">
       <h2 class="form__title">بارك اللّه فيكم</h2>
       <div class="chose-cart__flower">
         <img src="images/png/flower.png" />
@@ -51,7 +51,7 @@
       </div>
     </div>
 
-    <div class="chose-cart__modal" id="details">
+    <div class="chose-cart__modal" id="details__modal">
       <h2 class="form__title">Реквизиты <span>&nbsp; МА'ХАДА</span><img src="/images/png/hiya.png" class="hiya30"> </h2>
       <div class="modal-close">
         <span></span>
@@ -182,21 +182,21 @@
         <div class="wrapper">
           <h1 class="main__header">Поддержи проект</h1>
           <div class="support-project__flex">
-            <div class="support-project__item">
+            <div class="support-project__item chose-cart__button">
               <p class="support-project__item-title">
                 <span>Стань меценатом</span><br />
                 в исламском образовании
               </p>
               <img src="images/png/finger.svg" class="finger" />
             </div>
-            <div class="support-project__item">
+            <div class="support-project__item chose-cart__button">
               <p class="support-project__item-title">
                 <span>Пополни фонд</span><br />
                 "Поддержка Студентки МА'ХАДА"
               </p>
               <img src="images/png/finger.svg" class="finger" />
             </div>
-            <div class="support-project__item">
+            <div class="support-project__item chose-messenger__button">
               <p class="support-project__item-title">
                 <span>Расскажи</span><br />
                 о нашем проекте в соц сетях
@@ -265,6 +265,6 @@
     </main>
 
     <script src="js/main.js"></script>
-    <script src="js/start.js"></script>
+    <script src="js/support.js"></script>
   </body>
 </html>
