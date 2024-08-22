@@ -2194,6 +2194,9 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top -30px right -330px;
+  @media screen and (max-width: 800px) {
+    background-image: none;
+  }
 }
 
 .rules__main-block {
@@ -2230,6 +2233,9 @@ a {
   position: absolute;
   left: 0;
   top: 20px;
+  @media screen and (max-width: 800px) {
+    left: -30px;
+  }
 }
 
 .rules__text {
