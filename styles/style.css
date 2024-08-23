@@ -2543,6 +2543,10 @@ a {
   margin-top: 120px;
   padding: 40px 50px 50px 50px;
   position: relative;
+  @media screen and (max-width: 800px) {
+    background-image: none;
+    background-color: #fffbf7;
+  }
 }
 
 .support-project .main__header {
@@ -2568,7 +2572,7 @@ a {
   position: relative;
   width: 50%;
   @media screen and (max-width: 800px) {
-    width: 80%;
+    width: 100%;
   }
 }
 
@@ -2605,6 +2609,9 @@ a {
 
 .support-project__text--right {
   width: 80%;
+  @media screen and (max-width: 800px) {
+    width: 100%;
+  }
 }
 
 .support-project__right-wrapper {
@@ -2612,6 +2619,9 @@ a {
   justify-content: right;
   margin-top: 30px;
   margin-right: 50px;
+  @media screen and (max-width: 800px) {
+    margin-right: 0;
+  }
 }
 
 .support-project__flower {
@@ -2620,6 +2630,9 @@ a {
   right: -30px;
   bottom: 30px;
   transform: rotate(90deg);
+  @media screen and (max-width: 800px) {
+    display: none;
+  }
 }
 
 .support-project__flower img {
