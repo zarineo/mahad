@@ -347,6 +347,7 @@ a {
   position: absolute;
   right: 0;
   font-family: Amiri;
+  font-size: 25px;
 }
 
 .basmala_wrap {
@@ -354,14 +355,18 @@ a {
   /* height: 100%; */
   position: relative;
   list-style: none;
+  margin-bottom: 40px;
 }
 
 .basmala_wrap--mobile {
   /* height: 100%; */
   position: relative;
   list-style: none;
-  display: flex;
+  display: none;
   align-items: center;
+  @media screen and (max-width: 800px) {
+    display: flex;
+  }
 }
 
 .basmala_wrap--mobile .basmala {
@@ -2708,7 +2713,11 @@ a {
 
 
 
-
+.docs {
+  display: block;
+  text-decoration: underline;
+  margin: 10px 0;
+}
 
 .opacity {
   opacity: 0;
