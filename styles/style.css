@@ -347,7 +347,7 @@ a {
   position: absolute;
   right: 0;
   font-family: Amiri;
-  font-size: 25px;
+  font-size: 16px;
 }
 
 .basmala_wrap {
@@ -382,7 +382,7 @@ a {
   /* width: 60%; */
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 60px;
   justify-content: flex-end;
   color: #316d69;
   padding: 0 150px 80px 150px;
@@ -499,6 +499,7 @@ a {
   font-family: 'ElMessiri';
   color: #69c8c3;
   position: relative;
+  margin-bottom: 33px;
 }
 .hiya {
   position: absolute;
@@ -1115,7 +1116,7 @@ a {
   width: 50px;
 }
 .hiya20 {
-  width: 20px;
+  width: 30px;
 }
 
 .hiya30 {
@@ -1209,6 +1210,15 @@ a {
   width: fit-content;
   margin: 0 auto;
 }
+
+.ustaza__collab {
+  font-family: Lovelace;
+  color: #316d69;
+  text-align: center;
+  margin-top: 30px;
+  font-weight: 600;
+}
+
 
 .book-icon {
   width: 20px;
@@ -1965,7 +1975,7 @@ a {
 }
 
 .programm__note {
-  margin: 20px 0;
+  margin: 40px 0 20px;
 }
 
 .sm-accordion {
@@ -2395,21 +2405,28 @@ a {
 
 .form__title {
   font-size: 36px;
-  display: flex;
-  align-items: center;
+  line-height: 36px;
+  text-align: center;
+  /* display: flex; */
+  /* align-items: center;
   justify-content: center;
-  gap: 2px; 
+  gap: 2px;  */
 
   @media screen and (max-width: 1000px) {
     font-size: 30px;
+    line-height: 30px;
   }
   @media screen and (max-width: 800px) {
     font-size: 22px;
+    line-height: 22px;
   }
 }
 
-.form__title span {
+.form__title .span {
   color: #69c8c3;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
 }
 
 .modal-close,
