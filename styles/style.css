@@ -2241,6 +2241,10 @@ a {
 
 .schedule__text {
   margin: 10px 0;
+  width: 80%;
+  @media screen and (max-width: 800px) {
+    width: 100%;
+  }
 }
 
 
