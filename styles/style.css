@@ -522,9 +522,9 @@ a {
 }
 
 .about__video {
-  border: #69c8c3 solid 4px;
+  /* border: #69c8c3 solid 4px; */
   border-radius: 30px;
-  padding: 50px;
+  /* padding: 50px; */
   width: 50%;
   color: #316d69;
   font-size: 49px;
@@ -532,10 +532,23 @@ a {
   font-family: 'ElMessiri';
   margin: 0 auto;
   position: relative;
+  overflow: hidden;
   @media screen and (max-width: 800px) {
     font-size: 16px;  
     width: 100%;
   }
+}
+
+.video {
+  background-position: center;
+  background-size: cover;
+  /* width: 88.8%; */
+  /* height: 55%; */
+  margin: 0 auto;
+  width: 102%;
+  transition: 1s;
+  object-fit: cover; 
+  display: block;
 }
 
 .about__video img {
