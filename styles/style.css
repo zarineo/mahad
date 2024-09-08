@@ -525,7 +525,8 @@ a {
   /* border: #69c8c3 solid 4px; */
   border-radius: 30px;
   /* padding: 50px; */
-  width: 50%;
+  max-width: 50%;
+  height: 90vh;
   color: #316d69;
   font-size: 49px;
   text-align: center;
@@ -543,9 +544,9 @@ a {
   background-position: center;
   background-size: cover;
   /* width: 88.8%; */
-  /* height: 55%; */
+  height: 100%;
   margin: 0 auto;
-  width: 102%;
+  /* width: 102%; */
   transition: 1s;
   object-fit: cover; 
   display: block;
