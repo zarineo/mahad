@@ -504,6 +504,7 @@ a {
 .about__item {
   display: flex;
   gap: 10px;
+  width: 100%;
   align-items: center;
   color:#316d69;
   font-size: 18px;
@@ -519,6 +520,7 @@ a {
 .about__item p {
   @media screen and (max-width:800px) {
     font-size: 13px;
+    width: 100%;
   }
 }
 
