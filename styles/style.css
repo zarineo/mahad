@@ -29,6 +29,9 @@ body {
   list-style: none;
   background-color: #fffbf7;
   --webkit-scrollbar: none;
+  @media screen and (max-width: 700pc) {
+    /* font-size: 0,1em !important; */
+  }
 }
 
 body::-webkit-scrollbar {
@@ -189,8 +192,28 @@ a {
   margin: 15px 0;
 }
 
+.mobile__item p {
+  text-transform: uppercase;
+}
+
 .mobile__items {
   padding-left: 20px;
+}
+
+.donate-button {
+  margin: 0 auto;
+  width: 190px;
+  text-align: center;
+  border: #398087 solid 2px;
+  padding: 10px;
+  border-radius: 30px;
+  background-color: #398087;
+  color: #fef7e1;
+  text-transform: uppercase;
+}
+
+.donate-button:active {
+  box-shadow: 3px 3px #316d69;
 }
 
 .menu-itemm {
@@ -408,8 +431,8 @@ a {
     font-size: 35px;
   }
   @media screen and (max-width: 1000px) {
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 25px;
+    line-height: 28px;
     padding-left: 50px;
   }
 }
@@ -417,6 +440,9 @@ a {
 .main__text {
   font-family: 'ElMessiri';
   font-size: 22px;
+  @media screen and (max-width:800px) {
+    font-size: 14px;
+  }
 }
 
 .main__text span {
@@ -483,6 +509,16 @@ a {
   font-size: 18px;
   font-family: 'Lovelace';
   margin: 35px 0;
+  @media screen and (max-width:800px) {
+    font-size: 14px;
+    align-items: flex-start;
+  }
+}
+
+.about__item p {
+  @media screen and (max-width:800px) {
+    font-size: 13px;
+  }
 }
 
 .gal__container img {
@@ -503,7 +539,7 @@ a {
 }
 .hiya {
   position: absolute;
-  max-height: 70px;
+  max-height: 50px;
   @media screen and (max-width: 800px) {
     max-height: 30px;
   }
@@ -537,6 +573,7 @@ a {
   @media screen and (max-width: 800px) {
     font-size: 16px;  
     width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -608,7 +645,7 @@ a {
    border: #026060 2px dotted;
    border-radius: 30px;
    margin-bottom: 30px;
-   padding: 5px;
+   padding: 15px;
   }
 }
 .student__button {
@@ -622,6 +659,11 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 800px) {
+    width: 70%;
+    height: 110px;
+    margin: 0 auto;
+  }
 }
 
 /* .student__button img {
@@ -671,6 +713,11 @@ a {
   line-height: 40px;
   text-align: center;
   margin-top: 40px;
+  @media screen and (max-width:800px) {
+    font-size: 14px;
+    line-height: 15px;
+    margin-top: 20px;
+  }
 }
 
 /*start*/
@@ -715,6 +762,9 @@ a {
   font-size: 18px;
   text-align: center;
   margin-bottom: 80px;
+  @media screen and (max-width:800px) {
+    font-size: 14px;
+  }
 }
 
 .address {
@@ -752,6 +802,12 @@ a {
   font-family: El-Messiri;
   color: #316d69;
   font-weight: 700;
+}
+
+.address__text {
+  @media screen and (max-width: 600px) {
+    width: 80%;
+  }
 }
 
 
@@ -886,7 +942,8 @@ a {
   color: #316d69;
   padding: 0 100px;
   @media screen and (max-width: 800px) {
-    padding: 0 20px;    
+    padding: 0 20px; 
+    font-size: 14px;   
   }
 }
 
@@ -907,6 +964,9 @@ a {
   font-size: 18px;
   font-family: Lovelace;
   color: #316d69;
+  @media screen and (max-width:800px) {
+    font-size: 14px;
+  }
 }
 
 .mahad__subtitle {
@@ -981,6 +1041,9 @@ a {
 .main__header30 {
   font-size: 30px;
   text-align: center;
+  @media screen and (max-width:800px) {
+    font-size: 18px;
+  }
 }
 
 .total-items__block {
@@ -1033,6 +1096,9 @@ a {
   font-size: 18px;
   color:#316d69;
   font-weight: 600;
+    @media screen and (max-width:800px) {
+    font-size: 14px;
+  }
 }
 
 .mission__flex {
@@ -1123,11 +1189,14 @@ a {
 .our-student__item {
   display: flex;
   gap: 20px;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .hiya50 {
   width: 50px;
+  @media screen and (max-width:800px) {
+    width: 30px;
+  }
 }
 .hiya20 {
   width: 30px;
@@ -1141,6 +1210,9 @@ a {
   font-size: 18px;
   font-family: Lovelace;
   color: #398087;
+  @media screen and (max-width:800px) {
+    font-size: 14px;
+  }
 }
 
 /*Ustaza Iman*/
@@ -1258,6 +1330,7 @@ a {
     width: 100%;
     background-color: #eaf6f1;   
     padding: 20px; 
+    font-size: 14px;
   }
 }
 
@@ -1434,7 +1507,9 @@ a {
   border-radius: 14px;
   margin: 30px 0;
   font-size: 18px;
-
+  @media screen and (max-width:800px) {
+    font-size: 14px;
+  }
 }
 
 .format__block-item {
@@ -2116,6 +2191,9 @@ a {
   font-size: 18px;
   font-weight: 400;
   padding: 10px;
+  @media screen and (max-width:800px) {
+    font-size: 14px;
+  }
 }
 
 .books__text--bold {
@@ -2193,7 +2271,7 @@ a {
     width: 150px;
   }
   @media screen and (max-width: 650px) {
-    width: auto;
+    width: 47%;
     padding: 10px;
   }
 }
@@ -2203,13 +2281,14 @@ a {
   border-bottom: 1px solid #69c8c3;
   padding: 0 15px;
   text-align: center;
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1000px) {
     font-size: 20px;
   }
 }
 
 .schedule__course {
   font-size: 22px;
+  text-align: center;
   @media screen and (max-width: 800px) {
     font-size: 18px;
   }
@@ -2458,9 +2537,11 @@ a {
   @media screen and (max-width: 800px) {
     width: 100vw;
     height: 100vh;
+    /* height: fit-content; */
     top: 0;
     left: 0;
     border-radius: 0;
+    /* overflow: scroll; */
   }
 }
 
@@ -2530,6 +2611,16 @@ a {
     display: flex;
   }
 }
+
+.modal__content {
+  overflow-y: scroll;
+  height: 100%;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.modal__content::-webkit-scrollbar {
+    display: none;
+  }
 
 .form {
   margin: 20px 0;
@@ -2605,6 +2696,9 @@ a {
 
 .success__text {
   font-size: 18px;
+  @media screen and (max-width:800px) {
+    font-size: 14px;
+  }
 }
 
 .success__flower img {

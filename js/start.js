@@ -10,6 +10,8 @@
   const openModal = () => {
     formModal.classList.add('modal-active');
     backdropDark.classList.add('is-active');
+    // document.querySelector('body').style.overflow = 'hidden';
+    // formModal.style.overflow = 'auto';
   }
 
   const closeModal = () => {
