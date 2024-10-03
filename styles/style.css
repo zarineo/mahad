@@ -205,7 +205,7 @@ a {
   width: 190px;
   text-align: center;
   border: #398087 solid 2px;
-  padding: 10px;
+  padding: 15px 10px 10px;
   border-radius: 30px;
   background-color: #398087;
   color: #fef7e1;
@@ -509,6 +509,7 @@ a {
   font-size: 18px;
   font-family: 'Lovelace';
   margin: 35px 0;
+  flex-grow: 1;
   @media screen and (max-width:800px) {
     font-size: 14px;
     align-items: flex-start;
@@ -660,7 +661,7 @@ a {
   justify-content: center;
   align-items: center;
   @media screen and (max-width: 800px) {
-    width: 70%;
+    width: 80%;
     height: 110px;
     margin: 0 auto;
   }
@@ -2636,6 +2637,9 @@ a {
 .form__flower img {
   width: 100%;
   transform: rotate(90deg);
+  @media screen and (max-width: 800px) {
+    display: none;
+  }
 }
 
 .form__button {
