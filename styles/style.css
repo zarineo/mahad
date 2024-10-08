@@ -1699,7 +1699,7 @@ a {
   font-size: 22px;
   gap: 10px;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   color: #69c8c3;
   @media screen and (max-width: 800px) {
     font-size: 18px;
@@ -2334,18 +2334,22 @@ a {
   gap: 5px;
   font-weight: 600;
   align-items: center;
+  justify-content: center;
   padding: 20px 30px 20px 30px;
   position: relative;
   width: 200px;
+  height: 211px;
   @media screen and (max-width: 1000px) {
     width: 170px;
   }
   @media screen and (max-width: 850px) {
     width: 150px;
+    height: auto;
   }
   @media screen and (max-width: 650px) {
     width: 47%;
     padding: 10px;
+
   }
 }
 
@@ -2378,8 +2382,10 @@ a {
   font-size: 12px;
   margin-top: 20px;
   text-align: left;
+  margin-right: 30px;
   @media screen and (max-width: 800px) {
     margin-top: 10px;
+    margin-right: 0;
   }
 }
 
