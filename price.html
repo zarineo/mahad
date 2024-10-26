@@ -18,89 +18,97 @@
       <h2 class="form__title">
         <p>Анкета для поступления в &nbsp </p><p class="span"> МА'ХАД <img src="images/png/hiya.png" class="hiya50" /></p>
       </h2>
-      <form class="form" onsubmit="event.preventDefault();">
-        <input
-          type="text"
-          class="form__input"
-          value=""
-          placeholder="Фамилия Имя"
-          name="userName"
-          required
-        />
-        <input
-          type="text"
-          class="form__input"
-          value=""
-          placeholder="Возраст"
-          name="userDate"
-          required
-        />
-        <input
-          type="text"
-          class="form__input"
-          value=""
-          placeholder="Страна проживания"
-          name="userCountry"
-          required
-        />
-        <input
-          type="text"
-          class="form__input form__input--small"
-          value=""
-          title=""
-          placeholder="Контакт в телеграм (обязательно проверьте настройки Вашего аккаунта, чтобы мы могли связаться)"
-          name="userCountry"
-          required
-        />
-        <input
-          type="text"
-          class="form__input"
-          value=""
-          placeholder="Адрес электронной почты"
-          name="userMail"
-          required
-        />
-        <input
-          type="text"
-          class="form__input"
-          value=""
-          placeholder="Желаемый темп обучения: 2 года/индивидуальный график"
-          name="userGrafic"
-          required
-        />
-        <input
-          type="text"
-          class="form__input"
-          value=""
-          placeholder="Уровень чтения Корана"
-          name="userKoranLvl"
-          required
-        />
-        <input
-          type="text"
-          class="form__input"
-          value=""
-          placeholder="Уровень владения арабским языком"
-          name="userArabLvl"
-          required
-        />
-        <label name="ozn" class="form__label">
-          <input type="checkbox" name="ozn" required />
-          Ознакомлена с условиями 
-          <a href="docs.html" target="_blank"><u>договора</u></a>
-          </label
-        >
-        <button
-          type="submit"
-          class="form__button menu-itemm glass_button"
-          id="sendData"
-        >
-          Отправить заявку
-        </button>
-        <div class="form__flower">
-          <img src="images/png/flower.png" />
+      <div class="modal__content">
+        <div class="modal__content--wrapper">
+          <form class="form" onsubmit="event.preventDefault();">
+            <input
+              type="text"
+              class="form__input"
+              value=""
+              placeholder="Фамилия Имя"
+              name="userName"
+              required
+            />
+            <input
+              type="number"
+              class="form__input"
+              value=""
+              placeholder="Возраст"
+              name="userAge"
+              required
+            />
+            <input
+              type="text"
+              class="form__input"
+              value=""
+              placeholder="Страна проживания"
+              name="userCountry"
+              required
+            />
+            <input
+              type="text"
+              class="form__input form__input--small"
+              value=""
+              title=""
+              placeholder="Контакт в телеграм *"
+              name="userTelegram"
+              required
+            />
+            <input
+              type="text"
+              class="form__input"
+              value=""
+              placeholder="Адрес электронной почты"
+              name="userMail"
+              required
+            />
+            <input
+              type="text"
+              class="form__input"
+              value=""
+              placeholder="Желаемый формат обучения"
+              name="userGrafic"
+              required
+            />
+            <input
+              type="text"
+              class="form__input"
+              value=""
+              placeholder="Уровень чтения Корана"
+              name="userKoranLvl"
+              required
+            />
+            <input
+              type="text"
+              class="form__input"
+              value=""
+              placeholder="Уровень владения арабским языком"
+              name="userArabLvl"
+              required
+            />
+            <label name="ozn" class="form__label">
+              <input type="checkbox" name="ozn" required />
+              Ознакомлена с условиями 
+              <a href="docs.html" target="_blank"><u>договора</u></a>
+              </label
+            >
+            <p class="form__text">
+              <br><br>
+              * обязательно проверьте настройки Вашего аккаунта, чтобы мы могли написать Вам.
+            </p>
+            <button
+              type="submit"
+              class="form__button menu-itemm glass_button"
+              id="sendData"
+            >
+              Отправить заявку
+            </button>
+            <div class="form__flower">
+              <img src="images/png/flower.png" />
+            </div>
+          </form>
         </div>
-      </form>
+      </div>
     </div>
 
     <div class="success">

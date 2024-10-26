@@ -780,6 +780,7 @@ a {
     background-position-y: -100px;
     background-position-x: -40px;
     background-size: 160% 160%;
+    background-image: none;
   }
 }
 
@@ -1161,8 +1162,18 @@ a {
   background-size: cover;
   @media screen and (max-width: 800px) {
     padding: 120px 30px 30px;  
-      
+    background-image: none;
   }
+}
+
+.mission__kruglyash {
+  width: 100px;
+  margin-top: 20px;
+  margin-bottom: -20px;
+}
+
+.mission__kruglyash img {
+  width: 100%;
 }
 
 .mission__text {
@@ -2626,7 +2637,8 @@ a {
   gap: 40px;
   margin-top: 25px;
   @media screen and (max-width: 800px) {
-    display: block;
+    flex-direction: column;
+    gap: 30px;
   }
 }
 
@@ -2947,6 +2959,13 @@ a {
   background-color: #fffbf7;
   /* color: #00000020; */
   color: #316d69;
+  @media screen and (max-width: 800px) {
+    font-size: 12px;
+  }
+}
+
+.form__text {
+  font-size: 12px;
 }
 
 .form__input--small::-webkit-input-placeholder {
