@@ -2825,7 +2825,7 @@ a {
 .success {
   /* display: block !important; */
   left: calc(50% - 400px);
-  top: calc(50% - 20vh);
+  top: calc(50% - 40vh);
   text-align: center;
 }
 
