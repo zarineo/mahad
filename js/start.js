@@ -59,7 +59,7 @@
 
         const formData = new FormData(this);
         const data = {
-            chat_id: "317175779",  
+            chat_id: "462291550",  
             text: `Фамилия Имя: ${formData.get('userName')}\nВозраст: ${formData.get('userAge')}\nСтрана проживания: ${formData.get('userCountry')}\nТелеграм: ${formData.get('userTelegram')}\nEmail: ${formData.get('userMail')}\nТемп обучения: ${formData.get('userGrafic')}\nУровень чтения Корана: ${formData.get('userKoranLvl')}\nУровень владения арабским языком: ${formData.get('userArabLvl')}`
         };
 

@@ -625,17 +625,26 @@ a {
   transition: 1s;
   object-fit: cover; 
   display: block;
+  position: relative;
   @media screen and (max-width: 800px) {
     height: auto;width: 102%;
   }
 }
 
-.about__video img {
+/* .video-title {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  z-index: 10;
+  top: 0;
+  left: 0;
+} */
+/* .about__video img {
   position: absolute;
   bottom: -41px;
   max-height: 80px;
   left: calc(50% - 100px)
-}
+} */
 
 
 /*Students*/
