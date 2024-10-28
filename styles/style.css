@@ -2814,7 +2814,7 @@ a {
 }
 
 .success {
-  display: block !important;
+  /* display: block !important; */
   left: calc(50% - 400px);
   top: calc(50% - 20vh);
   text-align: center;
@@ -3002,7 +3002,7 @@ a {
   margin: 0 auto;
   @media screen and (max-width:800px) {
     width: 150px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 }
 
@@ -3012,7 +3012,7 @@ a {
 
 .success__text {
   font-size: 18px;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
   @media screen and (max-width:800px) {
     font-size: 14px;
   }
