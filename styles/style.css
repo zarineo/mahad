@@ -2827,6 +2827,7 @@ a {
   left: calc(50% - 400px);
   top: calc(50% - 40vh);
   text-align: center;
+  
 }
 
 .form__modal,
