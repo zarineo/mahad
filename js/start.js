@@ -56,7 +56,7 @@
 
         // Открываем окно успеха
         document.querySelector('.success').classList.add('modal-active');
-
+//317175779 - id который был
         const formData = new FormData(this);
         const data = {
             chat_id: "317175779",  
