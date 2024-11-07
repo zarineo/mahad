@@ -58,11 +58,11 @@
         document.querySelector('.success').classList.add('modal-active');
 //317175779 - id который был
 
-//462291550 - id который рабочий)))
+//462291550 - id который
 
         const formData = new FormData(this);
         const data = {
-            chat_id: "4568412022",  
+            chat_id: "462291550",  
             text: `Фамилия Имя: ${formData.get('userName')}\nВозраст: ${formData.get('userAge')}\nСтрана проживания: ${formData.get('userCountry')}\nТелеграм: ${formData.get('userTelegram')}\nEmail: ${formData.get('userMail')}\nТемп обучения: ${formData.get('userGrafic')}\nУровень чтения Корана: ${formData.get('userKoranLvl')}\nУровень владения арабским языком: ${formData.get('userArabLvl')}`
         };
 
