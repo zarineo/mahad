@@ -2843,7 +2843,7 @@ a {
   width: 80vw;
   background-color: #fffbf7;
   border-radius: 20px;
-  position: fixed;
+  position: absolute;
   padding: 30px 40px;
   font-family: Lovelace;
   color: #316d69;
