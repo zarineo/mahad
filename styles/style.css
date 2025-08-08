@@ -459,8 +459,10 @@ a {
   @media screen and (max-width: 1000px) {
     font-size: 20px;
   }
-  
+}
 
+.main__header span {
+  text-transform: lowercase;
 }
 
 .main__text {
@@ -2542,7 +2544,7 @@ a {
   font-family: Lovelace;
   padding-bottom: 80px;
   position: relative;
-  background-image: url('../images/png/laptop.png');
+  /* background-image: url('../images/png/laptop.png'); */
   background-size: 20%;
   background-repeat: no-repeat;
   background-position: bottom -20px right -20px;
@@ -2581,6 +2583,27 @@ a {
   }
   @media screen and (max-width: 450px) {
     flex-wrap: wrap;
+  }
+}
+
+.schedule__container {
+  display: flex;
+}
+
+.schedule__container img {
+  width: 100%;
+}
+
+.schedule__desk-img {
+   @media screen and (max-width: 550px) {
+    display: none;
+  }
+}
+
+.schedule__mob-img {
+  display: none;
+   @media screen and (max-width: 550px) {
+    display: block;
   }
 }
 
